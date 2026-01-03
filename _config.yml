@@ -1,0 +1,67 @@
+# Jekyll configuration for GitHub Pages
+
+title: "Utku Türk - University of Chicago Application"
+description: "Application materials for Instructional Faculty position in Linguistics"
+author: "Utku Türk"
+email: "utkuturk@umd.edu"
+url: "https://utkuturk.com"
+
+# Theme
+theme: minima
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  syllabi:
+    output: true
+    permalink: /syllabi/:name/
+  profile:
+    output: true
+    permalink: /profile/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "syllabi"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "profile"
+    values:
+      layout: "page"
+
+# Navigation
+header_pages:
+  - cover_letter.md
+  - teaching_statement.md
+  - syllabi/intro_psycholing.md
+  - syllabi/quant_methods.md
+  - syllabi/intro_ai_language.md
+  - syllabi/advanced_nlp_ai.md
+  - syllabi/linguistic_illusions.md
+  - syllabi/morphology_production.md
+  - syllabi/bayesian_modeling.md
+  - profile/index.md
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Show excerpts on homepage
+show_excerpts: true
