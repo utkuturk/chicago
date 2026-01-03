@@ -1,0 +1,198 @@
+--- --- @import "minima";
+
+/* Custom CSS for improved spacing and aesthetics */
+
+/* Base typography and spacing */
+body {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+/* Improved heading spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+/* Enhanced table styling */
+table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+/* Better content width */
+.wrapper {
+    max-width: 900px;
+    padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px 15px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 10px 12px;
+    }
+}
+
+/* Improved link styling */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+
+a:visited {
+    color: #7c3aed;
+}
+
+/* Better list spacing */
+ul,
+ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Code blocks */
+code {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5em;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 1.5em;
+    margin: 1.5em 0;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+    margin: 2em 0;
+}
+
+/* PDF download links */
+a[href$=".pdf"] {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    border-radius: 6px;
+    margin: 0.5em 0.5em 0.5em 0;
+    border-bottom: none !important;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a[href$=".pdf"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1em 0;
+}
