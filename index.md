@@ -128,8 +128,6 @@ My research investigates how **morphosyntactic structure** and **morphophonologi
 - Türk, U., Logačev, P. (2024). "Agreement Attraction in Turkish: The case of genitive attractors." *Language, Cognition, and Neuroscience*.
 - Türk, U., Atmaca, F., Özateş, Ş.B. et al. (2022). "Resources for Turkish dependency parsing: introducing the BOUN Treebank and the BoAT annotation tool." *Language Resources & Evaluation*, 56, 259–307.
 
-[View full research profile →](profile/research.md)
-
 ---
 
 ## Technical Expertise
@@ -144,8 +142,6 @@ My research investigates how **morphosyntactic structure** and **morphophonologi
 - LaTeX, Quarto, Rmarkdown
 - Web-based experiments (PCIbex, jsPsych)
 - Linux/bash, Docker, AWS
-
-[View full technical profile →](profile/technical.md)
 
 ---
 

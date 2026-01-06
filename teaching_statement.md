@@ -1,37 +1,47 @@
-I teach linguistics as a discipline where claims are only as good as
-their operationalization. In my courses, students learn to turn an
-informal claim about structure or meaning into an explicit hypothesis
-about cognition that can be implemented as an experiment, a principled
-measurement choice, and a statistical model, yielding predictions a
-reader can actually evaluate. I treat the research pipeline as a single
+---
+title: Teaching Statement
+layout: page
+---
+
+# Teaching Statement
+
+I teach (psycho)linguistics as a discipline where claims are only as good as
+their operationalization. In my courses, students learn to turn informal verbal claims about the processing of structure or meaning into explicit
+hypotheses about cognition that can be implemented as an experiment, a
+principled measurement choice, and a statistical model, a cognitive model, or a computational model, yielding predictions that a reader can actually evaluate. I treat the educational pipeline as a research pipeline which is a single
 integrated object rather than a sequence of separate parts: theory
 motivates design, design determines what counts as evidence, and
 analysis makes assumptions visible. To build this intuition hands-on,
-students predict patterns before seeing data, work through the full
-workflow (hypothesis → design → data → model → interpretation →
-limitations), and leave with authentic products ranging from reproducible
-analyses and replication reports to research proposals and—where
-feasible within a semester—pilot studies, computational models,
-and cross-linguistic extensions that encode explicit hypotheses about
-human linguistic cognition and, when appropriate, its relationship to
-machine behavior.
+students work through the full
+workflow as a part of their curriculum (hypothesis → design → data → model → interpretation →
+limitations), and leave with authentic products such as reproducible
+analyses, replication reports, short proposals, or small
+ cognitive/computational models that encode a hypothesis about human
+linguistic cognition and, when appropriate, its relationship to machine
+behavior. This aim seems ambitious, but I believe the selective student
+profile at the University of Chicago would enable me to implement this
+agenda. With this approach, I address a fundamental gap: students struggle to
+think critically about methodological choices without experiencing the
+full research pipeline. By treating the research process as part of the curriculum rather than a by-product of reading papers, students develop the ability to reason backward from claims
+to evidence and forward from design, maybe even their own, to interpretation.
 
-**\
-Teaching Experience and Instructional Roles.** My teaching experience
+**Teaching Experience and Instructional Roles.** My teaching experience
 spans large-lecture support, methods-intensive instruction, and
 workshop-based mentoring. At the University of Maryland, I have TA'd
 core offerings including Language and Mind and Grammars and Cognition
-(LING 440), and I served as experimental instructor in the graduate
-Psycholinguistics seminar (LING 640), where I taught a module on
+(undergraduate psycholinguistics), and I voluntarily served as experimental
+instructor in the graduate Psycholinguistics seminar (graduate
+psycholinguistics), where I taught a module on
 experimental methods and statistical analysis. I have also supported
-interdisciplinary teaching (including a course on Machine Learning in
-Language and Art), which has sharpened my ability to make technical
+interdisciplinary teaching (including an undergraduate General Education
+course on Machine Learning in Language and Art), which has sharpened my ability to make technical
 material accessible to students with diverse preparation.
 
-In my teaching for LING 440 and LING 640, I have repeatedly taken
-students through the full research pipeline. Students read a focused set
-of papers in depth (e.g., illusion phenomena in comprehension in 440;
-prosody and center-embedding in 640), extract core assumptions and
+In my teaching for undergraduate and graduate psycholinguistics, I have
+repeatedly taken students through the full research pipeline. Students read a focused set
+of papers in depth (e.g., semantic illusion phenomena in comprehension in
+undergraduate psycholinguistics; prosody and center-embedding in graduate
+psycholinguistics), extract core assumptions and
 predictions, and design a decisive follow-up test. We collaboratively
 build materials, choose a measurement and methodology, implement the
 experiment, and interpret the resulting patterns, often going far enough
@@ -39,10 +49,11 @@ to fit and critique an appropriate statistical model. My goal is that
 students leave not only able to summarize a literature, but able to turn
 an idea into an experiment and an analysis.
 
-I have also taught in an intensive workshop setting. At the University
-of Oxford, I co-organized and helped instruct a workshop on sentence
-production in which participants developed production experiments from
-the ground up. Students read relevant literature, articulated a precise
+I have also taught in an intensive workshop setting. I remotely
+co-organized and helped instruct a workshop on sentence production at the
+University of Oxford, in which participants—mostly talented undergraduates
+with no prior research experience, similar to UChicago students—developed
+production experiments from the ground up. Students read relevant literature, articulated a precise
 theoretical question, designed materials (including critical contrasts
 and fillers), selected an elicitation and measurement strategy, and
 implemented a runnable experiment. A major focus of my role was
@@ -63,8 +74,19 @@ a workable pipeline quickly, concretely, and without lowering standards.
 
 *Psycholinguistics and Language Processing.* In psycholinguistics, I aim
 to demystify how research turns theoretical questions into decisive
-tests. Students often understand a study's results while missing the
-chain of decisions that make the results informative. To address this, I
+tests that can be implemented as models or experiments. Students often
+understand a study's results while missing the chain of decisions that
+make the results informative. This reflects a common student approach:
+they focus on "what did the researchers find?" rather than "what choices
+did the researchers make to ensure this finding is interpretable?"
+Without understanding the methodological scaffolding, students can
+summarize findings but struggle to evaluate whether the evidence actually
+supports the interpretation. Students expect
+technical aspects to be intimidating, but underestimate how challenging
+it is to articulate precise questions and turn them into feasible tests.
+I address this by making the decision-making process explicit: why a
+particular design choice was made, what alternatives were rejected, and
+what consequences each choice has for interpretation. To address this, I
 structure units around the lifecycle of an experiment: identifying a
 theoretical question, isolating confounds, designing materials,
 collecting data, modeling, and interpreting limitations. Long-standing
@@ -79,8 +101,11 @@ experiment would adjudicate between competing accounts, and what result
 would actually force an update? This is where I integrate practical
 training---experiment building and data analysis---as steps required by
 the theoretical question, not as add-ons. Teaching these skills hands-on
-is essential for an introductory psycholinguistics course: living
-through the workflow demystifies the decisions.
+is essential: living through the workflow demystifies the decisions and
+allows me to treat students as collaborating colleagues who develop the
+critical judgment to evaluate whether evidence actually supports
+interpretation—the core of treating the educational pipeline as a
+research pipeline.
 
 *Quantitative Research Methods.* My goal in methods courses is to make
 statistics a way of thinking rather than a set of scripts: what does the
@@ -89,7 +114,8 @@ evidence against it? Because many students approach statistics with
 anxiety, I begin with intuition---what question a method answers and why
 it works---before implementation. I build this intuition from basics:
 statistics is structured counting paired with an informed guess on
-causation. Once the logic is clear, we work with real, messy data and
+causation—a principle I teach through simulation exercises that make the
+generative process explicit. Once the logic is clear, we work with real, messy data and
 treat modeling as a workflow: specification, diagnostics, and
 interpretation, not merely significance testing.
 
@@ -101,11 +127,26 @@ present from the beginning and is guided by theory and typology.
 Students practice the full pipeline from theoretical hypothesis to
 implementable study to reproducible analysis, rather than encountering
 methods and modeling as separate silos that can be skipped in assigned
-papers.
+papers. This emphasis on the full pipeline is crucial: students take
+statistical outputs at face value without understanding the chain from
+question to analysis choice to interpretation. Experiencing each stage
+helps students ask: what would the data look like if the hypothesis were
+false? This critical thinking requires hands-on engagement with the full
+workflow. By building statistical intuition through simulation and
+applying it to real research questions, students develop the independence
+to design rigorous studies and evaluate claims critically—treating them
+as capable researchers, not passive learners. A common pitfall in teaching quantitative methods is treating
+student struggle as lack of aptitude rather than natural learning. I
+assume all students can develop these skills with appropriate scaffolding,
+normalizing confusion and emphasizing that understanding develops through
+iteration.
 
 *Cognitive Models and Computational Modeling.* In computational
 modeling, I treat models as commitments: explicit hypotheses whose
-assumptions should be inspected and tested. Students learn to separate
+assumptions should be inspected and tested. These traditional models help
+students formalize theories into precise predictions, while AI models
+(discussed below) test whether linguistic generalizations emerge from
+data-driven learning at scale. Students learn to separate
 (i) descriptive fit, (ii) generalization, and (iii) interpretation. I
 structure these courses around a foundations-to-frontiers progression:
 first giving students the programming and mathematical footing needed to
@@ -115,7 +156,10 @@ choices have theoretical consequences.
 Concretely, the course combines close reading of classic and current
 work with regular programming exercises in Python/R/Stan. The goal is
 methodological independence: students should be able to take a
-theoretical claim and ask what computations it entails. A central
+theoretical claim and ask what computations it entails. This
+skill—turning verbal theories into executable code—is essential for
+students to contribute to theoretical debates, not just consume them,
+and in turn informs possible experiments to be run. A central
 capstone is a final project in which students either implement a simple
 model to address a question about language processing or evaluate an
 existing model using cross-linguistic data.
@@ -126,7 +170,9 @@ critical interpretation: these systems often achieve predictive success
 for reasons that do not align with human mechanisms. At the same time,
 their internal structure can be a useful instrument for formalizing
 assumptions that are otherwise hard to state precisely and for testing
-hypotheses at scale. For example, students can quantify whether a system
+hypotheses at scale. Students can use benchmarks like SyntaxGym and BLiMP
+to quantify tendencies in psycholinguistic measures, or probe attention
+and use intervention techniques to quantify whether a system
 treats a morphological cue as evidence for controllerhood, a
 theoretically grounded heuristic in human processing.
 
@@ -136,13 +182,18 @@ linguistic property, and test whether the model's behavior changes in
 the way a hypothesis predicts. In practice, this means teaching students
 to design evaluations that target specific linguistic generalizations
 and to use transparent analyses to connect model behavior to claims
-about representation, learning, and inference. Students begin applying
-these counterfactual methods in introductory courses and develop
-sophisticated intervention designs in advanced seminars.
+about representation, learning, and inference. By doing so, the students
+at UChicago and I can collaboratively improve how AI systems can be
+utilized for our research.
 
 **Mentorship and Advising.** Mentorship is an extension of teaching: a
 more involved setting where students learn to scope questions, build
-workflows, and communicate results. For thesis advising, I encourage
+workflows, and communicate results. One aspect of mentorship I find
+particularly rewarding is writing primers that help students establish their experimental workflows and bridge their theoretical knowledge with practical implementation. Seeing
+graduate students at Maryland and undergraduates at Oxford use these
+materials to independently implement experiments or run analyses—often
+going beyond what I initially taught them—confirms my belief that the
+right scaffolding can unlock genuine methodological independence independent of one's background. For undergraduate thesis advising, I encourage
 projects that are methodologically realistic yet intellectually
 substantive---replications/extensions, corpus-and-experiment
 combinations, or carefully constrained modeling projects---so students
@@ -155,10 +206,13 @@ whose expertise is complementary to mine. Ming Xiang and Melissa
 Baese-Berk would be ideal partners for courses in psycholinguistics and
 language processing that connect real-time comprehension to experimental
 method; Karlos Arregi provides a natural connection to formal approaches
-to morphosyntax that I would integrate into production research; and
-Craig Thorburn is an ideal colleague for co-developing lasting
+to morphosyntax that I would plan to integrate into my production research and psycholinguistic curriculum;
+and Craig Thorburn is an ideal colleague for co-developing lasting
 curriculum in computational linguistics and quantitative methods that
-will outlast temporary hypes.
+will outlast temporary hypes. Chris Kennedy's recent course on AI and
+language provides an invaluable model for developing courses that
+integrate these approaches with critical evaluation and practical
+application.
 
 My aim as an instructional faculty member is to produce students who can
 (i) reason from theory to prediction, (ii) evaluate evidence with

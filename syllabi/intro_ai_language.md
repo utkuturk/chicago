@@ -10,17 +10,15 @@
 
 **Prerequisites:** None. No prior programming or math experience required.
 
-**[📄 Download PDF Version](intro_ai_language.pdf)**
-
 ---
 
 ## 1. Course Description
 
 How do neural networks learn to process language? Can they acquire grammatical knowledge from text alone? What can machine learning tell us about linguistic structure?
 
-This course introduces neural networks and their applications to language, balancing technical foundations with linguistic questions. You'll learn how to build text classifiers, train language models, and implement modern NLP systems. But you'll also investigate what these models learn: Do they capture syntactic dependencies? Can they generalize across languages? How do their representations compare to human linguistic knowledge? I'm excited to explore the intersection of these two fields with you as we build the technology of the future.
+This course introduces neural networks and their applications to language, balancing technical foundations with linguistic questions. You will learn how to build text classifiers, train language models, and implement modern NLP systems. But you will also investigate what these models learn: Do they capture syntactic dependencies? Can they generalize across languages? How do their representations compare to human linguistic knowledge? I am excited to explore the intersection of these two fields with you as we build the technology of the future.
 
-By the end of the semester, you'll be able to implement neural models in Python, design experiments to probe what they've learned, and critically evaluate claims about AI and language. This is a hands-on course that combines practical ML skills with linguistic analysis. Don't worry if you've never coded before—we'll build these skills together from the ground up.
+By the end of the semester, you will be able to implement neural models in Python, design experiments to probe what they've learned, and critically evaluate claims about AI and language. This is a hands-on course that combines practical ML skills with linguistic analysis.
 
 **No prior programming experience required**—we build skills from scratch.
 
@@ -118,32 +116,7 @@ Do your own work. You may collaborate on homework, but must write your own code 
 LLMs may be used for **support** (debugging, learning syntax) but not to generate solutions. Document any use.
 
 ### 6.4 Accessibility & Wellness
-If you need accommodations, please contact the relevant campus office and talk to me as early as possible in the semester. I'm committed to ensuring all students can succeed in this course.
-
-If you're struggling—whether with the material, experimental design, coding, or anything else in life—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your wellbeing matters more than any assignment.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version:
-
-| Wk | Topic | Readings (Selected) | Lab / Due |
-| :-- | :--- | :--- | :--- |
-| 1 | Intro; NNs and Language | Newell (1973); Jurafsky & Martin Ch. 6 | Python basics; word representations |
-| 2 | Perceptrons; Backprop | Goodfellow et al. Ch. 6; Olah | Perceptron from scratch; **Due:** HW1 |
-| 3 | Word Embeddings | Jurafsky & Martin Ch. 6; Ettinger | Probing word vectors |
-| 4 | RNNs; LSTMs | Jurafsky & Martin Ch. 9; Olah (2015) | Character LM; LSTM implementation; **Due:** HW2 |
-| 5 | Evaluating Linguistic Knowledge | Marvin & Linzen (2018); BLiMP | Minimal pairs testing; **Due:** Midterm |
-| 6 | Attention Mechanisms | Bahdanau et al. (2015); Vig & Belinkov | Visualizing attention; **Due:** HW3 |
-| 7 | Transformers (BERT/GPT) | Vaswani et al. (2017); Devlin et al.; Radford et al. | Fine-tuning BERT |
-| 8 | LLMs & Prompting | GPT-3 paper; Chain-of-thought | GPT prompts; **Due:** HW4 |
-| 9 | Limitations & Ethics | Bender & Koller (2020); Stochastic Parrots | Bias detection; **Due:** HW5 |
-| 10 | Final Presentations | | Peer feedback; **Due:** Final Report |
-
-**Quarter grading:** Participation (15%), Homework 5x (40%, 8% each), Midterm project (10%), Final project (35%).
-
----
+If you need accommodations, please contact the relevant campus office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.
 
 ## 7. Resources
 *   **Textbooks:** Jurafsky & Martin (3rd ed.); Goodfellow et al. (Deep Learning).

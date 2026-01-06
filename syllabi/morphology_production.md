@@ -10,13 +10,11 @@
 
 **Methods spine (recurring):** [*Experimentology*](https://experimentology.io)
 
-**[📄 Download PDF Version](morphology_production.pdf)**
-
 ---
 
 ## 1. Course Description
 
-When do we plan inflectional morphology? This seminar connects theory about production and morphological encoding to experiments that can test it. You'll evaluate core claims, design studies with explicit predictions, and build practical skills in implementation, analysis, and modeling. Think of us as colleagues working on the same project together—my goal is to help you develop the best possible project, not just evaluate it at the end. I'm genuinely excited to see what questions you'll pursue. The semester ends with an original proposal or pilot, written in article format.
+When do we plan inflectional morphology? This seminar connects theory about production and morphological encoding to experiments that can test it. You will evaluate core claims, design studies with explicit predictions, and build practical skills in implementation, analysis, and modeling. Think of us as colleagues working on the same project together—my goal is to help you develop the best possible project, not just evaluate it at the end. The semester ends with an original proposal or pilot, written in article format.
 
 ## 2. Learning Objectives
 
@@ -120,32 +118,7 @@ Do your own work; cite sources. Plagiarism or fabrication result in failure.
 LLMs (ChatGPT, etc.) are allowed for **support** (debugging, brainstorming) but not generation. You must document use.
 
 ### 6.6 Accessibility & Wellness
-If you need accommodations, please register with the relevant accessibility office and talk to me as early as possible in the semester. I'm committed to making sure everyone can succeed in this course.
-
-If you're struggling—whether with the material, experimental design, coding, or anything else—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your wellbeing matters more than any assignment deadline.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version:
-
-| Wk | Topic | Readings (Selected) | Studio Work / Due |
-| :-- | :--- | :--- | :--- |
-| 1 | Intro; Production architecture | Levelt et al. (1999); Bock & Levelt (1994) | Designing production experiments |
-| 2 | Agreement attraction in production | Bock & Miller (1991); Eberhard et al. (2005) | Implementing preamble task; **Due:** Design 1 |
-| 3 | Cross-linguistic production | Vigliocco & Nicol (1998); Hartsuiker et al. (2003) | Adapting materials for Turkish/Russian |
-| 4 | Morphological encoding | Janssen & Caramazza (2003); Levelt et al. (1999) | Picture naming experiments; **Due:** Design 2 |
-| 5 | Experimental implementation | PCIbex tutorial; Experimentology | Building production experiments |
-| 6 | Pilot data collection | | Running pilots; **Due:** Pilot data |
-| 7 | Production data analysis | Analyzing RTs and errors | Mixed-effects models for production |
-| 8 | Computational modeling | Dell (1986); Chang et al. (2006) | Simulating production errors; **Due:** Analysis |
-| 9 | Project development | | Individual project work |
-| 10 | Final presentations | | Peer feedback; **Due:** Final Proposal |
-
-**Quarter grading:** Participation (20%), Design showcases 2x (20%, 10% each), Implementation showcase (15%), Analysis showcase (15%), Final proposal (30%).
-
----
+If you need accommodations, please register with the relevant accessibility office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.
 
 ## 7. Resources
 *   **Experimentology:** [experimentology.io](https://experimentology.io)

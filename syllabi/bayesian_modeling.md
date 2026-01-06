@@ -10,15 +10,13 @@
 
 **Prerequisites:** Introduction to programming (R or Python) and basic statistics.
 
-**[📄 Download PDF Version](bayesian_modeling.pdf)**
-
 ---
 
 ## 1. Course Description
 
 How do we test theories of cognition? How can we formalize our hypotheses about how the mind works? This course introduces computational modeling as a tool for understanding cognitive processes, with a specific focus on **Bayesian Cognitive Modeling**.
 
-Unlike data analysis, which asks "is there an effect?", cognitive modeling asks "what underlying process generated this data?". We'll use the probabilistic programming language **Stan** to build, fit, and evaluate generative models of cognition. We'll cover the full workflow: from defining a mathematical model of a cognitive process, to implementing it in code, to recovering parameters from simulated data, and finally applying it to real human behavioral data. I know Stan can be challenging at first, but I'm excited to work through it with you—once it clicks, it's incredibly powerful.
+Unlike data analysis, which asks "is there an effect?", cognitive modeling asks "what underlying process generated this data?". We will use the probabilistic programming language **Stan** to build, fit, and evaluate generative models of cognition. We will cover the full workflow: from defining a mathematical model of a cognitive process, to implementing it in code, to recovering parameters from simulated data, and finally applying it to real human behavioral data.
 
 ## 2. Learning Objectives
 
@@ -118,32 +116,7 @@ Each model follows the same workflow:
 You may collaborate on code, but you must write your own write-ups and understand every line of code you submit.
 
 ### 6.3 Accessibility & Wellness
-If you need accommodations, please contact the relevant campus office and talk to me as early as possible in the semester. I'm committed to making sure everyone can succeed in this course.
-
-If you're struggling—whether with Stan, the math, or anything else in life—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your wellbeing matters more than any assignment deadline.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version:
-
-| Wk | Topic | Readings (Selected) | Lab / Due |
-| :-- | :--- | :--- | :--- |
-| 1 | Intro; Generative modeling | McElreath Ch. 1-2; Lee & Wagenmakers Ch. 1 | Simulating from theory |
-| 2 | Probability foundations | McElreath Ch. 2-3; Kruschke Ch. 4 | Grid approximation; **Due:** HW1 |
-| 3 | Stan basics | Stan User's Guide; brms vignettes | First Stan model |
-| 4 | Linear models in Stan | McElreath Ch. 4; Bürkner (2017) | Regression in brms; **Due:** HW2 |
-| 5 | Hierarchical models | McElreath Ch. 13; Gelman & Hill Ch. 12 | Partial pooling; **Due:** Midterm |
-| 6 | Model checking | Gelman et al. Ch. 6; Gabry et al. (2019) | Posterior predictive checks; **Due:** HW3 |
-| 7 | Model comparison | Vehtari et al. (2017); McElreath Ch. 7 | LOO-CV; WAIC |
-| 8 | Cognitive models | Lee & Wagenmakers Ch. 3-6 | Signal detection; memory models; **Due:** HW4 |
-| 9 | Advanced topics | Mixture models; ordinal regression | Final project work |
-| 10 | Final presentations | | Peer feedback; **Due:** Final Project |
-
-**Quarter grading:** Participation (15%), Homework 4x (40%, 10% each), Midterm project (15%), Final project (30%).
-
----
+If you need accommodations, please contact the relevant campus office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.
 
 ## 7. Resources
 1.  Lee, M. D., & Wagenmakers, E. J. (2014). *Bayesian Cognitive Modeling*.

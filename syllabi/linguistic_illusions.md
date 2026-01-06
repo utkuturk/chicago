@@ -8,15 +8,13 @@
 **Office hours:** By appointment  
 **Course site:** Canvas
 
-**[📄 Download PDF Version](linguistic_illusions.pdf)**
-
 ---
 
 ## 1. Course Description
 
 Why do we accept sentences that are ungrammatical? Why do we reject sentences that are well-formed? This seminar explores **Linguistic Illusions**: phenomena where our real-time processing of language systematically deviates from the dictates of our internal grammar.
 
-Just as visual illusions reveal the heuristics of the visual system, linguistic illusions provide a window into the architecture of the language parser. We'll cover the full taxonomy of known illusions—semantic, structural, and comparative—and use them to evaluate competing theories of sentence processing. I'm excited to debate these mechanisms with you as we try to reverse-engineer the mind together. This is a collaborative intellectual journey, not a competition.
+Just as visual illusions reveal the heuristics of the visual system, linguistic illusions provide a window into the architecture of the language parser. We will cover the full taxonomy of known illusions—semantic, structural, and comparative—and use them to evaluate competing theories of sentence processing. I look forward to debating these mechanisms with you as we try to reverse-engineer the mind.
 
 ## 2. Learning Objectives
 
@@ -39,7 +37,7 @@ Each week, we'll examine competing theoretical accounts:
 - **Cue-Based Retrieval** (Lewis & Vasishth): Interference during memory access
 - **Noisy Channel** (Levy, Gibson): Rational inference under uncertainty
 
-You will be assigned to defend a theoretical position for certain weeks. Your job: make the strongest possible case for your assigned mechanism, even if you don't believe it. This forces you to engage deeply with each theory's logic and predictions. But remember—we're all on the same team here, trying to understand how language works. Strong disagreement is encouraged; disrespect is not.
+You will be assigned to defend a theoretical position for certain weeks. Your job: make the strongest possible case for your assigned mechanism, even if you don't believe it. This forces you to engage deeply with each theory's logic and predictions.
 
 ### Illusion of the Week
 Each week features one illusion type with a provocative question:
@@ -93,35 +91,10 @@ A 4-page critical essay identifying a gap in the illusions literature—a confou
 ## 6. Policies
 
 ### 6.1 Mental Health & Wellness
-Graduate school is challenging, and this seminar is intellectually demanding. If you're struggling—academically, personally, or emotionally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your health and wellbeing are more important than any assignment or deadline.
-
-If you need to miss class or need an extension, just let me know. I trust you to manage your own wellbeing, and I'm here to support you however I can.
+Graduate school is challenging. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to plan next steps together. Your health and well-being are more important than any assignment.
 
 ### 6.2 Accessibility
 If you need accommodations, please contact the relevant campus office and talk to me early in the semester.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version focusing on core illusion types:
-
-| Wk | Topic | Key Readings | Concept |
-| :-- | :--- | :--- | :--- |
-| 1 | Intro: Illusions as Data | Phillips, Wagers, & Lau (2011) | Grammar vs. Processor |
-| 2 | Semantic & Comparative Illusions | Erickson & Mattson (Moses); Wellwood et al. | Shallow Processing |
-| 3 | Agreement Attraction I | Bock & Miller (1991); Wagers et al. (2009) | Percolation vs. Retrieval |
-| 4 | Agreement Attraction II | Slioussar (2018); Tucker et al. (2015) | Cross-linguistic variation |
-| 5 | NPI Illusions | Vasishth et al. (2008); Xiang et al. (2009) | Intrusive licensors |
-| 6 | Mechanism I: Retrieval | Lewis, Vasishth, & Van Dyke (2006) | Cue-based retrieval |
-| 7 | Mechanism II: Noisy Channel | Levy (2008); Gibson et al. (2013) | Rational inference |
-| 8 | Mechanism III: Good-Enough | Ferreira & Patson (2007) | Heuristic processing |
-| 9 | Illusions in LLMs | Futrell et al. (2019); Gulordava et al. (2018) | Neural illusions? |
-| 10 | Synthesis | Discussion of "Missing Links" | **Due:** Final Project |
-
-**Quarter grading:** Participation (20%), Weekly Synthesis (40%), Presentation (10%), Final Project (30%).
-
----
 
 ## 7. Resources
 1.  **Course Canvas Site:** All PDFs will be available here.

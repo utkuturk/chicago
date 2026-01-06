@@ -10,17 +10,15 @@
 
 **Prerequisites:** Background in neural networks (intro ML for language) or permission.
 
-**[📄 Download PDF Version](advanced_nlp_ai.pdf)**
-
 ---
 
 ## 1. Course Description
 
 What do neural language models actually learn? How can we probe their internal representations? Can we establish causal relationships between model components and linguistic behavior?
 
-Neural networks are often treated as black boxes. In this seminar, we'll open them up together. This advanced seminar explores cutting-edge methods for interpreting and analyzing neural networks through a linguistic lens. We focus on three core areas: (i) **attention probing**—analyzing attention patterns to understand how models process syntactic dependencies, (ii) **causality and intervention**—using counterfactual methods to establish causal relationships, and (iii) **representation analysis**—extracting and interpreting hidden representations for linguistic knowledge.
+Neural networks are often treated as black boxes. In this seminar, we will open them up together. This advanced seminar explores cutting-edge methods for interpreting and analyzing neural networks through a linguistic lens. We focus on three core areas: (i) **attention probing**—analyzing attention patterns to understand how models process syntactic dependencies, (ii) **causality and intervention**—using counterfactual methods to establish causal relationships, and (iii) **representation analysis**—extracting and interpreting hidden representations for linguistic knowledge.
 
-You'll learn to design rigorous probing experiments, implement causal intervention methods, analyze attention entropy and head specialization, and critically evaluate interpretability claims. This is a research-oriented seminar where you'll develop original proposals for investigating what neural models learn about language. I'm excited to explore these questions with you—this is an area where we're still figuring things out together.
+Students will learn to design rigorous probing experiments, implement causal intervention methods, analyze attention entropy and head specialization, and critically evaluate interpretability claims. This is a research-oriented seminar where students develop original proposals for investigating what neural models learn about language.
 
 ## 2. Learning Objectives
 
@@ -122,32 +120,7 @@ Conduct an original research project investigating a linguistic question.
 *   **Implementing methods:** Start with toy examples. Document as you go.
 
 ### 6.2 Accessibility & Wellness
-If you need accommodations, please contact the relevant campus office and talk to me as early as possible in the semester. I'm committed to making sure everyone can succeed in this course.
-
-If you're struggling—whether it's with the material, coding, or anything else—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your wellbeing matters more than any assignment deadline.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version:
-
-| Wk | Topic | Readings (Selected) | Methods / Due |
-| :-- | :--- | :--- | :--- |
-| 1 | Intro; Probing methodology | Newell (1973); Hewitt & Liang (2019) | Linear probes; Setup |
-| 2 | Probing with controls | Hewitt & Manning (2019); Pimentel et al. | Control tasks; **Due:** Method 1 |
-| 3 | Attention analysis | Clark et al. (2019); Voita et al. (2019) | Visualizing attention; head pruning |
-| 4 | Causal interventions | Kaushik et al. (2020); Vig et al. (2020) | Counterfactuals; mediation; **Due:** Method 2 |
-| 5 | Representation geometry | Saphra & Lopez (2019); Ravfogel et al. (2020) | CKA similarity; INLP |
-| 6 | Cross-linguistic probing | Pires et al. (2019); Chi et al. (2020) | Multilingual models; **Due:** Method 3 |
-| 7 | Linguistic structure | Tenney et al. (2019); Jawahar et al. | Edge probing |
-| 8 | Limitations & critiques | Belinkov & Glass (2019); Jacovi & Goldberg | Critique workshop |
-| 9 | Mechanistic interpretability | Olsson et al. (2022); Elhage et al. (2021) | Circuit analysis |
-| 10 | Final presentations | | Peer feedback; **Due:** Final Project |
-
-**Quarter grading:** Participation (15%), Paper presentations 2x (20%, 10% each), Method implementations 3x (30%, 10% each), Final project (35%).
-
----
+If you need accommodations, please contact the relevant campus office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.
 
 ## 7. Resources
 *   **Key Surveys:** Belinkov & Glass (2019); Rogers et al. (2020).

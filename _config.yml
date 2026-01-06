@@ -20,20 +20,12 @@ collections:
   syllabi:
     output: true
     permalink: /syllabi/:name/
-  profile:
-    output: true
-    permalink: /profile/:name/
 
 # Defaults
 defaults:
   - scope:
       path: ""
       type: "syllabi"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "profile"
     values:
       layout: "page"
 
@@ -48,7 +40,6 @@ header_pages:
   - syllabi/linguistic_illusions.md
   - syllabi/morphology_production.md
   - syllabi/bayesian_modeling.md
-  - profile/index.md
 
 # Exclude from processing
 exclude:

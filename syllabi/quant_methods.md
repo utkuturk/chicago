@@ -10,19 +10,15 @@
 
 **Prerequisites:** Basic statistics. No prior programming experience required.
 
-**[📄 Download PDF Version](quant_methods.pdf)**
-
 ---
 
 ## 1. Course Description
 
 How do we understand what statistical models actually do? How can we test whether our models are appropriate for our data? What does it mean for a model to "learn" from data?
 
-This course takes a **simulation-first approach** to quantitative methods in linguistics. I know statistics can be intimidating—I've been there! My goal is to make it approachable by peeling back the math and showing you what's really happening under the hood. Rather than treating statistical models as black boxes that magically produce p-values, we'll build models from the ground up by simulating data. This approach makes abstract statistical concepts concrete: you'll see exactly how regression works, what mixed-effects models assume, and why Bayesian inference is powerful.
+This course takes a **simulation-first approach** to quantitative methods in linguistics. I know statistics can be intimidating, but my goal is to make it approachable by peeling back the math. Rather than treating statistical models as black boxes, we will learn to build models from the ground up by simulating data. This approach makes abstract statistical concepts concrete: you will see exactly how regression works, what mixed-effects models assume, and why Bayesian inference is powerful.
 
-Following the approach of McElreath's *Statistical Rethinking*, we emphasize understanding models as generative processes. You'll learn to: (i) simulate data from a specified model, (ii) fit models to recover the parameters you simulated, (iii) check whether your model assumptions are met, and (iv) use simulations for power analysis and model validation.
-
-By the end of the semester, you'll be able to design and execute quantitative studies, analyze complex linguistic datasets, fit appropriate statistical models, and—most importantly—understand what those models are actually doing. I'm excited to work through this journey with you.
+Following the approach of McElreath's *Statistical Rethinking*, we emphasize understanding models as generative processes. You will learn to: (i) simulate data from a specified model, (ii) fit models to recover the parameters you simulated, (iii) check whether your model assumptions are met, and (iv) use simulations for power analysis and model validation.
 
 **No prior programming or statistics experience required**—we build everything from scratch through simulation.
 
@@ -115,32 +111,7 @@ Homework is due on Canvas by 11:59pm. Late submissions lose 10% per day (up to 3
 *   **Understanding statistics:** Focus on concepts. Visualize everything. Connect to linguistics.
 
 ### 6.2 Accessibility & Wellness
-If you need accommodations, please contact the relevant campus office and talk to me as early as possible in the semester. I'm committed to making sure everyone can succeed in this course.
-
-If you're struggling—whether it's with the material, coding, or anything else in life—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together. Your wellbeing matters more than any assignment deadline.
-
----
-
-## Quarter System (10 Weeks)
-
-For institutions on a quarter system, here's a condensed 10-week version:
-
-| Wk | Topic | Readings (Required) | Lab / Due |
-| :-- | :--- | :--- | :--- |
-| 1 | R basics; data wrangling | Wickham & Grolemund Ch. 1-5; Winter Ch. 1 | R, RStudio, dplyr basics |
-| 2 | Data visualization | Wickham & Grolemund Ch. 3; Healy Ch. 1-3 | ggplot2; publication-quality figures; **Due:** HW1 |
-| 3 | Linear regression | Winter Ch. 5-7; Gelman & Hill Ch. 3-4 | Simple and multiple regression |
-| 4 | Logistic regression | Winter Ch. 8; Gelman & Hill Ch. 5 | Categorical outcomes; predictions; **Due:** HW2 |
-| 5 | Mixed-effects models | Winter Ch. 9-11; Baayen et al. (2008); Barr et al. (2013) | Random intercepts and slopes; **Due:** Midterm project |
-| 6 | Data simulation | DeBruine & Barr (2021); Green & MacLeod (2016) | Simulating data; power analysis; **Due:** HW3 |
-| 7 | Bayesian inference | McElreath Ch. 1-3; Bürkner (2017) | Priors, posteriors, brms |
-| 8 | Model comparison | Gelman et al. Ch. 6-7; Vehtari et al. (2017) | Cross-validation; information criteria; **Due:** HW4 |
-| 9 | Reproducible research | Quarto documentation; Marwick et al. (2018) | Quarto documents; final project work |
-| 10 | Final presentations | | 10-min presentations; **Due:** Final project |
-
-**Quarter grading:** Participation (15%), Homework 4x (40%, 10% each), Midterm project (15%), Final project (30%).
-
----
+If you need accommodations, please contact the relevant campus office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.
 
 ## 7. Resources
 *   **Primary Text:** McElreath (2020). *Statistical Rethinking*.
