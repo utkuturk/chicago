@@ -11,7 +11,7 @@ body {
   line-height: 1.8;
   font-size: 17px;
   color: #2c3e50;
-  background-color: #fafbfc;
+  background-color: #ffffff;
 }
 
 p {
@@ -60,17 +60,11 @@ h4 {
 }
 
 .page-content {
-  padding: 60px 0;
-  background-color: #ffffff;
-  margin: 0 auto;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 40px 0;
 }
 
-.post-content, .page-content .wrapper {
-  padding: 40px 50px;
+.post-content {
+  padding: 0;
 }
 
 /* ============================================
@@ -279,57 +273,63 @@ hr {
 .site-nav .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .site-nav .dropbtn {
   color: #2c3e50;
   font-weight: 500;
-  font-size: 1.05em;
-  padding: 8px 16px;
+  font-size: 1em;
+  padding: 8px 12px;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  background: transparent;
+  border: none;
 }
 
-.site-nav .dropdown:hover .dropbtn {
-  color: #ffffff;
-  background-color: #800000;
+.site-nav .dropbtn:hover,
+.site-nav .dropdown.active .dropbtn {
+  color: #800000;
+  background-color: #f8f9fa;
 }
 
 .site-nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 280px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-  padding: 8px 0;
+  min-width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 4px 0;
   z-index: 1000;
-  border: 2px solid #800000;
+  border: 1px solid #e2e8f0;
   top: 100%;
   left: 0;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .site-nav .dropdown-content a {
   color: #2c3e50;
-  padding: 12px 20px;
+  padding: 10px 16px;
   text-decoration: none;
   display: block;
-  font-size: 0.95em;
-  transition: all 0.2s ease;
+  font-size: 0.9em;
+  transition: all 0.15s ease;
   margin: 0;
+  border-left: 3px solid transparent;
 }
 
 .site-nav .dropdown-content a:hover {
-  background-color: #800000;
-  color: #ffffff;
+  background-color: #f8f9fa;
+  border-left-color: #800000;
+  padding-left: 20px;
 }
 
-.site-nav .dropdown:hover .dropdown-content {
+.site-nav .dropdown:hover .dropdown-content,
+.site-nav .dropdown.active .dropdown-content {
   display: block;
 }
 
@@ -339,18 +339,25 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
+  .site-nav {
+    float: none;
+  }
+
+  .site-nav .page-link,
   .site-nav .dropdown {
+    display: block;
     margin-left: 0;
-    width: 100%;
+    margin-bottom: 10px;
   }
 
   .site-nav .dropdown-content {
     position: static;
     box-shadow: none;
     border: none;
-    border-left: 3px solid #800000;
+    border-left: 2px solid #800000;
     margin-left: 15px;
     background-color: #f8f9fa;
+    margin-top: 5px;
   }
 
   .site-nav .dropdown:hover .dropdown-content {
@@ -371,18 +378,18 @@ hr {
 }
 
 .doc-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border: 2px solid #e9ecef;
-  border-radius: 12px;
-  padding: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .doc-card:hover {
   border-color: #800000;
-  box-shadow: 0 8px 20px rgba(128, 0, 0, 0.15);
-  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .doc-card h3 {
@@ -507,18 +514,17 @@ hr {
 }
 
 .package-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border: 3px solid #800000;
-  border-radius: 12px;
-  padding: 35px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.1);
+  background: #ffffff;
+  border: 2px solid #800000;
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .package-card:hover {
-  border-color: #a52a2a;
-  box-shadow: 0 8px 24px rgba(128, 0, 0, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .package-card h3 {
@@ -576,10 +582,10 @@ hr {
    ============================================ */
 
 .site-footer {
-  border-top: 3px solid #800000;
-  padding: 50px 0 30px 0;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-  color: #ffffff;
+  border-top: 2px solid #e2e8f0;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  color: #2c3e50;
   margin-top: 60px;
 }
 
@@ -594,21 +600,21 @@ hr {
 
 .footer-left h3,
 .footer-right h3 {
-  color: #ffffff;
-  font-size: 1.3em;
+  color: #800000;
+  font-size: 1.2em;
   margin-bottom: 15px;
   margin-top: 0;
 }
 
 .footer-left p,
 .footer-right p {
-  color: #e2e8f0;
+  color: #4a5568;
   line-height: 1.8;
   margin: 0;
 }
 
 .footer-right a {
-  color: #ffffff;
+  color: #800000;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -621,7 +627,10 @@ hr {
 
 .footer-bottom {
   text-align: center;
-  color: #cbd5e0;
+  color: #6c757d;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
 }
 
 .footer-bottom p {
@@ -630,7 +639,7 @@ hr {
 }
 
 .footer-date {
-  color: #a0aec0;
+  color: #6c757d;
   font-style: italic;
 }
 
@@ -646,20 +655,24 @@ hr {
    ============================================ */
 
 /* Download PDF links */
-a[href$=".pdf"] {
+a[href$=".pdf"],
+.pdf-download-btn {
   display: inline-block;
-  padding: 0.6em 1.2em;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 12px 24px;
+  background: #800000;
   color: white !important;
   border-radius: 6px;
   font-weight: 600;
   margin: 1em 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
-a[href$=".pdf"]:hover {
+a[href$=".pdf"]:hover,
+.pdf-download-btn:hover {
+  background: #a52a2a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -727,100 +740,12 @@ a[href^="mailto:"] {
    HOMEPAGE SECTIONS - Card-based Design
    ============================================ */
 
-/* Hero section at the top */
-.page-content h1:first-child {
-  background: linear-gradient(135deg, #800000 0%, #8b0000 50%, #a52a2a 100%);
-  color: white;
-  padding: 40px 50px;
-  margin: -60px -50px 40px -50px;
-  border-radius: 8px 8px 0 0;
-  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.15);
-}
-
-.page-content h1:first-child + h2 {
-  margin-top: 0;
+/* Simplified section styling */
+h2 {
   color: #800000;
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 400;
-}
-
-/* Section styling for major headings */
-.page-content > h2 {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 20px 30px;
-  margin: 50px -50px 30px -50px;
-  border-left: 5px solid #800000;
-  color: #800000;
-  font-weight: 700;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Syllabus cards - make them look like cards */
-.page-content h4 a {
-  display: block;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  padding: 20px;
-  margin: 20px 0;
-  border: 2px solid #e9ecef;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.page-content h4 a:hover {
-  border-color: #800000;
-  box-shadow: 0 4px 16px rgba(128, 0, 0, 0.1);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-/* Key features badges */
-.page-content strong:contains("Key Features") {
-  background-color: #fff3cd;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-/* Contact section styling */
-.page-content h2:contains("Contact") + p {
-  background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 100%);
-  padding: 30px;
-  border-radius: 8px;
-  font-size: 1.1em;
-  border: 2px solid #dee2e6;
-}
-
-/* Teaching Philosophy principles list */
-.page-content h2:contains("Teaching Philosophy") + p + ol {
-  list-style: none;
-  counter-reset: philosophy-counter;
-  padding-left: 0;
-}
-
-.page-content h2:contains("Teaching Philosophy") + p + ol > li {
-  counter-increment: philosophy-counter;
-  position: relative;
-  padding-left: 60px;
-  margin-bottom: 25px;
-}
-
-.page-content h2:contains("Teaching Philosophy") + p + ol > li::before {
-  content: counter(philosophy-counter);
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(135deg, #800000 0%, #a52a2a 100%);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2em;
+  border-bottom: 2px solid #800000;
+  padding-bottom: 10px;
+  margin-top: 2em;
 }
 
 @media print {
