@@ -1,3 +1,8 @@
+---
+title: Home
+layout: page
+---
+
 # Utku Türk
 ## Application Materials for University of Chicago
 
@@ -9,88 +14,110 @@ University of Maryland, College Park
 
 ## Application Documents
 
-### Core Materials
-- **[Cover Letter](cover_letter.md)** - Letter of application for the Instructional Faculty position
-- **[Teaching Statement](teaching_statement.md)** - My approach to teaching linguistics through operationalization and hands-on learning
-- **[Curriculum Vitae (PDF)](cv_utkuturk.pdf)** - Complete academic CV
+<div class="document-cards">
+  <div class="doc-card">
+    <h3><a href="cover_letter.html">📄 Cover Letter</a></h3>
+    <p>Letter of application for the Instructional Faculty position</p>
+  </div>
+  <div class="doc-card">
+    <h3><a href="teaching_statement.html">📚 Teaching Statement</a></h3>
+    <p>My approach to teaching linguistics through operationalization and hands-on learning</p>
+  </div>
+  <div class="doc-card">
+    <h3><a href="cv_utkuturk.pdf">📋 Curriculum Vitae</a></h3>
+    <p>Complete academic CV (PDF)</p>
+  </div>
+</div>
 
 ---
 
-## Sample Course Syllabi
+## Course Packages
 
-I've developed seven distinctive course syllabi demonstrating my teaching breadth across psycholinguistics, computational methods, and AI/NLP:
+I've designed **two integrated course sequences** (10-week quarter system) that demonstrate a cohesive vision for curriculum development:
+
+<div class="package-cards">
+  <div class="package-card">
+    <h3><a href="package1_psycholinguistics.html">📚 Package 1: Experimental Psycholinguistics</a></h3>
+    <p class="package-meta">3-course sequence | Undergraduate → Graduate</p>
+    <p>A comprehensive sequence training students in experimental psycholinguistics, from foundational methods through computational modeling to specialized research in morphological planning.</p>
+    <p><strong>Courses:</strong> Introduction to Psycholinguistics → Bayesian Cognitive Modeling → Morphological Planning in Production</p>
+    <a href="package1_psycholinguistics.html" class="package-link">View Full Package →</a>
+  </div>
+
+  <div class="package-card">
+    <h3><a href="package2_ai_nlp.html">🤖 Package 2: AI & Natural Language Processing</a></h3>
+    <p class="package-meta">2-course sequence | Mixed → Advanced Graduate</p>
+    <p>A sequence bridging machine learning, NLP, and linguistic theory. Students learn to build neural models and use them as scientific instruments to investigate linguistic structure.</p>
+    <p><strong>Courses:</strong> Machine Learning for Language → Advanced NLP & AI for Linguistics</p>
+    <a href="package2_ai_nlp.html" class="package-link">View Full Package →</a>
+  </div>
+</div>
+
+---
+
+## Individual Course Syllabi
+
+All syllabi below are designed for the **10-week quarter system**.
 
 ### Psycholinguistics & Language Processing
 
-#### [Introduction to Psycholinguistics](syllabi/intro_psycholing.md)
-**Learning Through the Experimental Process**
-*Undergraduate/Graduate | Fall 2026*
+<div class="syllabus-grid">
+  <div class="syllabus-card">
+    <h4><a href="syllabi/intro_psycholing.html">🧠 Introduction to Psycholinguistics</a></h4>
+    <p class="course-meta">Undergraduate/Graduate | 10 weeks</p>
+    <p>An apprenticeship in experimental psycholinguistics. Students work through the complete research cycle, building mini-experiments from question to analysis.</p>
+    <p class="key-features"><strong>Key:</strong> QALMRI framework, hands-on labs, full experimental workflow</p>
+    <a href="syllabi/intro_psycholing.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
 
-An apprenticeship in experimental psycholinguistics. Students work through the complete research cycle multiple times, building mini-experiments from question formation to data analysis. Features a unique **Experiment Building Timeline** showing weekly milestones.
+  <div class="syllabus-card">
+    <h4><a href="syllabi/morphology_production.html">🔬 Morphology in Production</a></h4>
+    <p class="course-meta">Graduate Seminar | 10 weeks</p>
+    <p>A studio-model seminar where half our time is spent building: writing code, designing experiments, debugging analyses.</p>
+    <p class="key-features"><strong>Key:</strong> PCIbex implementation, R analysis, preregistration</p>
+    <a href="syllabi/morphology_production.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
+</div>
 
-**Key Features:** QALMRI framework, hands-on labs, HSP conference project, full experimental workflow
+### Quantitative Methods & Modeling
 
----
+<div class="syllabus-grid">
+  <div class="syllabus-card">
+    <h4><a href="syllabi/quant_methods.html">📊 Quantitative Methods</a></h4>
+    <p class="course-meta">Undergraduate/Graduate | 10 weeks</p>
+    <p>A simulation-first approach to statistics. Students learn to think like statisticians by building models from scratch.</p>
+    <p class="key-features"><strong>Key:</strong> R/Stan, Bayesian inference, simulation challenges</p>
+    <a href="syllabi/quant_methods.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
 
-#### [Linguistic Illusions: From Illusions to Inference](syllabi/linguistic_illusions.md)
-**Graduate Seminar | Fall 2026*
-
-A debate-focused seminar on linguistic illusions built around **intellectual combat**. Students defend assigned theoretical positions (even those they don't believe!) and interrogate competing mechanisms: shallow processing, cue-based retrieval, and noisy channel.
-
-**Key Features:** Debate format, weekly synthesis papers, "Illusion of the Week" with provocative questions
-
----
-
-#### [Morphology in Production: How Words Are Built](syllabi/morphology_production.md)
-**Graduate Seminar | Fall 2026**
-
-A **studio-model** seminar where half our time is spent building: writing code, designing experiments, debugging analyses. Includes peer workshop sessions and collaborative build-athons.
-
-**Key Features:** PCIbex implementation, R analysis, preregistration, article-format final projects
-
----
-
-### Quantitative Methods
-
-#### [Quantitative Methods for Linguistics](syllabi/quant_methods.md)
-**R, Bayesian Statistics, and Reproducible Research**
-*Undergraduate/Graduate | Fall 2026*
-
-A **simulation-first** approach to statistics. Students learn to think like statisticians by building models from the ground up through simulation. Features weekly **Simulation Challenges** (coding puzzles).
-
-**Key Features:** R/Stan, Bayesian inference, mixed-effects models, power analysis, Quarto reproducibility
-
----
-
-#### [Bayesian Cognitive Modeling for Linguistics](syllabi/bayesian_modeling.md)
-**From Theory to Implementation**
-*Advanced Graduate | Fall 2026*
-
-Teaches students to think like **theoreticians**: "If my theory is true, what data would I see?" Features weekly **Mathematical Intuition Building** before touching code. Six-step workflow from theory to implementation.
-
-**Key Features:** Generative stance, Stan implementation, parameter recovery, model comparison
-
----
+  <div class="syllabus-card">
+    <h4><a href="syllabi/bayesian_modeling.html">🎯 Bayesian Cognitive Modeling</a></h4>
+    <p class="course-meta">Advanced Graduate | 10 weeks</p>
+    <p>Think like theoreticians: "If my theory is true, what data would I see?" Six-step workflow from theory to Stan implementation.</p>
+    <p class="key-features"><strong>Key:</strong> Generative models, parameter recovery, model comparison</p>
+    <a href="syllabi/bayesian_modeling.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
+</div>
 
 ### AI and Natural Language Processing
 
-#### [Machine Learning for Language](syllabi/intro_ai_language.md)
-**Neural Networks, Linguistic Structure, and NLP Applications**
-*Undergraduate/Graduate | Fall 2026*
+<div class="syllabus-grid">
+  <div class="syllabus-card">
+    <h4><a href="syllabi/intro_ai_language.html">🤖 Machine Learning for Language</a></h4>
+    <p class="course-meta">Undergraduate/Graduate | 10 weeks</p>
+    <p>Beginner-friendly course balancing technical foundations with linguistic questions. The Three Questions framework.</p>
+    <p class="key-features"><strong>Key:</strong> Build neural nets from scratch, PyTorch, probing experiments</p>
+    <a href="syllabi/intro_ai_language.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
 
-Beginner-friendly course balancing technical foundations with linguistic questions. Features **The Three Questions** framework (What can it do? What can't it do? What does that tell us?) and **Model of the Week** spotlight.
-
-**Key Features:** Build neural nets from scratch, implement backprop by hand, PyTorch, probing experiments
-
----
-
-#### [Advanced NLP & AI for Linguistics](syllabi/advanced_nlp_ai.md)
-**Attention Probing, Causality, and Interpretability**
-*Advanced Graduate | Spring 2027*
-
-Research-level seminar on cutting-edge interpretability methods. Features **Paper Presentation Rotation** with 4-step structure and **Method Implementation Showcase** where students demonstrate discoveries.
-
-**Key Features:** Probing classifiers, causal intervention, attention analysis, counterfactual methods
+  <div class="syllabus-card">
+    <h4><a href="syllabi/advanced_nlp_ai.html">🔍 Advanced NLP & AI</a></h4>
+    <p class="course-meta">Advanced Graduate | 10 weeks</p>
+    <p>Research-level seminar on cutting-edge interpretability methods with paper presentations and method implementations.</p>
+    <p class="key-features"><strong>Key:</strong> Probing classifiers, causal intervention, attention analysis</p>
+    <a href="syllabi/advanced_nlp_ai.pdf" class="pdf-link">📄 Download PDF</a>
+  </div>
+</div>
 
 ---
 
@@ -104,14 +131,12 @@ My teaching is built on three principles:
 
 3. **Hands-on Learning**: Students predict patterns before seeing data, work through complete workflows, and leave with authentic products—reproducible analyses, replication reports, pilot studies, and computational models.
 
-Each syllabus reflects a distinct pedagogical approach:
-- **Intro Psycholing**: Apprenticeship model
-- **Quant Methods**: Simulation-first lab
-- **Intro AI**: Three Questions framework
-- **Advanced NLP**: Research seminar
-- **Linguistic Illusions**: Intellectual combat arena
-- **Morphology Production**: Studio/maker space
-- **Bayesian Modeling**: Theoretician's approach
+Each course embodies a distinct pedagogical approach:
+- **Introduction to Psycholinguistics**: Apprenticeship model - learning by doing
+- **Bayesian Cognitive Modeling**: Theoretician's approach - "what data would we see?"
+- **Morphology in Production**: Studio/maker space - half our time spent building
+- **Machine Learning for Language**: Three Questions framework - build, probe, evaluate
+- **Advanced NLP & AI**: Research workshop - cutting-edge methods and critical analysis
 
 ---
 

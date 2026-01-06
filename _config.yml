@@ -29,17 +29,7 @@ defaults:
     values:
       layout: "page"
 
-# Navigation
-header_pages:
-  - cover_letter.md
-  - teaching_statement.md
-  - syllabi/intro_psycholing.md
-  - syllabi/quant_methods.md
-  - syllabi/intro_ai_language.md
-  - syllabi/advanced_nlp_ai.md
-  - syllabi/linguistic_illusions.md
-  - syllabi/morphology_production.md
-  - syllabi/bayesian_modeling.md
+# Navigation handled by custom header.html
 
 # Exclude from processing
 exclude:
