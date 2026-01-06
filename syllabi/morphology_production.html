@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphology in Production - Utku Türk</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Utku Türk</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../cover_letter.html">Cover Letter</a></li>
+                <li><a href="../teaching_statement.html">Teaching Statement</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Course Packages <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../package1.html">Package 1: Psycholinguistics</a>
+                        <a href="../package2.html">Package 2: AI & NLP</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Syllabi <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../syllabi/intro_psycholing.html">Intro to Psycholinguistics</a>
+                        <a href="../syllabi/bayesian_modeling.html">Bayesian Cognitive Modeling</a>
+                        <a href="../syllabi/morphology_production.html">Morphology in Production</a>
+                        <a href="../syllabi/intro_ai_language.html">Machine Learning for Language</a>
+                        <a href="../syllabi/advanced_nlp_ai.html">Advanced NLP & AI</a>
+                        <a href="../syllabi/quant_methods.html">Quantitative Methods</a>
+                        <a href="../syllabi/linguistic_illusions.html">Linguistic Illusions</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+<h1>Seminar in Psycholinguistics</h1>
+<h3>How Words Are Built: Experimental Approaches to Morphological Planning</h3>
+<strong>LING 7XXX -- Spring Quarter 2027</strong>
+
+<strong>Time:</strong> Wednesday 1:30pm--4:20pm (3 hours/week)
+
+<strong>Location:</strong> TBD
+
+<strong>Instructor:</strong> Utku Turk (<a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a>)
+
+<strong>Office hours:</strong> By appointment
+
+<strong>Course site:</strong> ELMS/Canvas
+
+<strong>Methods spine (recurring):</strong> <a href="https://experimentology.io"><em>Experimentology</em></a>
+
+<strong>Format:</strong> Quarter system (10 weeks)
+
+<hr>
+
+<h2>1. Course Description</h2>
+
+<p>When do we plan inflectional morphology? This seminar connects theory about production and morphological encoding to experiments that can test it. You will evaluate core claims, design studies with explicit predictions, and build practical skills in implementation, analysis, and modeling. Think of us as colleagues working on the same project together—my goal is to help you develop the best possible project, not just evaluate it at the end. The quarter ends with an original proposal or pilot, written in article format.</p>
+
+<hr>
+
+<h2>2. Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+<ol>
+<li>Evaluate competing accounts of morphological planning in production.</li>
+<li>Turn theoretical claims into concrete predictions and falsifiable tests.</li>
+<li>Design experiments with appropriate controls, counterbalancing, and exclusions.</li>
+<li>Implement web-based production tasks in PCIbex (timing + audio).</li>
+<li>Analyze timing/error data in R (mixed models).</li>
+<li>Design cross-linguistic experiments that test morphological planning.</li>
+<li>Conduct power analyses and interpret model comparison metrics.</li>
+<li>Present and defend an experimental design.</li>
+<li>Write preregistered analysis plans with reproducible workflows.</li>
+</ol>
+
+<hr>
+
+<h2>3. Course Structure</h2>
+
+<h3>Weekly Rhythm</h3>
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Component</th>
+<th>What it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Readings</strong></td>
+<td>Short <strong>required</strong> core + <strong>recommended</strong> breadth + a <strong>depth pick</strong> (read fully).</td>
+</tr>
+<tr>
+<td><strong>Mini-lecture</strong></td>
+<td>Claim, design logic, and what pattern would change minds. (30 min)</td>
+</tr>
+<tr>
+<td><strong>Studio/Lab</strong></td>
+<td>90 minutes: PCIbex builds, R analysis, or modeling/simulation.</td>
+</tr>
+<tr>
+<td><strong>Peer Workshop</strong></td>
+<td>30 minutes: Share work-in-progress, get feedback, troubleshoot together.</td>
+</tr>
+<tr>
+<td><strong>Problem sets</strong></td>
+<td>Three deliverables scaffolding the final project.</td>
+</tr>
+<tr>
+<td><strong>Project</strong></td>
+<td>Idea → design → analysis → write-up.</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>The Studio Model</h3>
+<p>This seminar runs like an <strong>art studio</strong> or <strong>maker space</strong>—not a lecture hall. Half our time is spent building: writing code, designing experiments, debugging analyses. I'll circulate and work with you individually or in small groups.</p>
+
+<strong>Expect to:</strong>
+<ul>
+<li>Show unfinished work and get feedback (that's how we learn!)</li>
+<li>Help each other debug code and brainstorm designs</li>
+<li>Present work-in-progress multiple times, not just at the end</li>
+<li>Iterate based on peer and instructor feedback</li>
+</ul>
+
+<strong>Studio Sessions Include:</strong>
+<ul>
+<li><strong>Week 3</strong>: PCIbex build-athon—bring your laptop, build a minimal naming experiment</li>
+<li><strong>Week 5</strong>: Analysis clinic—bring your data, we'll wrangle it together</li>
+<li><strong>Week 7</strong>: Design workshop—pitch your final project idea, get feedback</li>
+<li><strong>Week 9</strong>: Cross-linguistic design exchange—pair up and critique each other's designs</li>
+</ul>
+
+<h3>A Collaborative Approach</h3>
+<strong>Think of us as colleagues working on the same project together.</strong> Reach out anytime with questions about your design, feedback on materials, or coding problems.
+
+<hr>
+
+<h2>4. Course Requirements</h2>
+
+<h3>4.1 Grading</h3>
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>%</th>
+<th>What counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participation</td>
+<td>20</td>
+<td>Substantive questions (Weekly) + discussion.</td>
+</tr>
+<tr>
+<td>Problem set 1</td>
+<td>10</td>
+<td>PCIbex build (minimal PWI).</td>
+</tr>
+<tr>
+<td>Problem set 2</td>
+<td>10</td>
+<td>R analysis pipeline.</td>
+</tr>
+<tr>
+<td>Problem set 3</td>
+<td>10</td>
+<td>Cross-linguistic design plan.</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td>50</td>
+<td>Proposal (5) + Presentation (10) + Final Paper (35).</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>4.2 Deliverables</h3>
+<ul>
+<li><strong>Week 4:</strong> Problem Set 1 (PCIbex experiment).</li>
+<li><strong>Week 5:</strong> 1-page proposal.</li>
+<li><strong>Week 6:</strong> Problem Set 2 (Analysis).</li>
+<li><strong>Week 8:</strong> Problem Set 3 (Cross-ling design).</li>
+<li><strong>Finals:</strong> Final paper (10--15pp article-format proposal with pilot data or comprehensive preregistered analysis plan).</li>
+</ul>
+
+<hr>
+
+<h2>5. Course Schedule (10 Weeks)</h2>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Wk</th>
+<th>Date</th>
+<th>Topic</th>
+<th>Readings (Req)</th>
+<th>Studio / Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Production architecture & PWI I</td>
+<td>Levelt et al. (1999); Schriefers et al. (1990)</td>
+<td>Claim → Measure; R Bootcamp</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PWI II & Chronometry</td>
+<td>Meyer (1996); Schriefers et al. (2002)</td>
+<td>PCIbex scaffold</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Structural constraints</td>
+<td>Momma et al. (2016); Experimentology</td>
+<td><strong>PCIbex build-athon</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Speech Errors & Auxiliaries</td>
+<td>Garrett (1975); Miozzo & Caramazza (1997)</td>
+<td><strong>Due:</strong> PS1; Error coding</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Agreement Attraction</td>
+<td>Bock & Miller (1991); Eberhard et al. (2005)</td>
+<td><strong>Due:</strong> Proposal; Analysis clinic</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Quant Workflow & Models</td>
+<td>Vasishth et al. (2018); Barr et al. (2013)</td>
+<td><strong>Due:</strong> PS2; Power analysis</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Derivational Morph</td>
+<td>Janssen & Caramazza (2011); Janssen et al. (2008)</td>
+<td><strong>Design workshop</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Cross-linguistic Design</td>
+<td>Vigliocco & Nicol (1998); Hartsuiker et al. (2003)</td>
+<td><strong>Due:</strong> PS3; Design clinic</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Theory to Predictions</td>
+<td>Embick (2015); Bobaljik (2015)</td>
+<td>Prereg skeleton; <strong>Presentations I</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Synthesis & Open Science</td>
+<td>Pickering & Garrod (2013); Open Science readings</td>
+<td><strong>Presentations II</strong>; Final Q&A</td>
+</tr>
+<tr>
+<td>Finals</td>
+<td><strong>Due:</strong> Final Project</td>
+</tr>
+</tbody>
+</table>
+
+
+<strong>Note:</strong> Each week is a single 3-hour session. Structure: 30 min lecture → 90 min studio/lab → 30 min peer workshop.
+
+<hr>
+
+<h2>6. Policies</h2>
+
+<h3>6.1 Attendance</h3>
+<p>Attendance is expected. Email me if you must miss class. You are responsible for catching up on lab content.</p>
+
+<h3>6.2 Late Work</h3>
+<ul>
+<li><strong>Reading questions:</strong> No late submissions (part of participation).</li>
+<li><strong>Problem sets:</strong> 10% penalty per day (max 3 days).</li>
+<li><strong>Project:</strong> Extensions by arrangement only.</li>
+</ul>
+
+<h3>6.3 Collaboration</h3>
+<p>Collaboration is encouraged! Discuss approaches, but write your own code and analysis.</p>
+
+<h3>6.4 Academic Integrity</h3>
+<p>Do your own work; cite sources. Plagiarism or fabrication result in failure.</p>
+
+<h3>6.5 Use of LLMs</h3>
+<p>LLMs (ChatGPT, etc.) are allowed for <strong>support</strong> (debugging, brainstorming) but not generation. You must document use.</p>
+
+<h3>6.6 Accessibility & Wellness</h3>
+<p>If you need accommodations, please register with the relevant accessibility office and talk to me early in the quarter. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.</p>
+
+<hr>
+
+<h2>7. Resources</h2>
+<ul>
+<li><strong>Experimentology:</strong> <a href="https://experimentology.io">experimentology.io</a> (primary methods resource)</li>
+<li><strong>Technical:</strong> <a href="https://doc.pcibex.net/">PCIbex Docs</a>, <a href="https://r4ds.had.co.nz/">R4DS</a></li>
+<li><strong>Production literature:</strong> Levelt (1989), Dell (1986), Caramazza (1997)</li>
+</ul>
+<em>   <strong>Analysis:</strong> Vasishth et al. (2018) </em>Statistical Foundations of Number*
+
+<hr>
+
+
+<h2>9. Connection to Course Sequence</h2>
+
+<p>This course is <strong>Course 3</strong> (capstone) in the Experimental Psycholinguistics sequence:</p>
+<ul>
+<li><strong>Course 1:</strong> Intro to Psycholinguistics (undergrad) - Fall Quarter</li>
+<li><strong>Course 2:</strong> Bayesian Cognitive Modeling (mixed) - Winter Quarter</li>
+<li><strong>Course 3 (this course):</strong> Morphological Planning in Production (grad) - Spring Quarter</li>
+</ul>
+
+<strong>Skills from previous courses that are essential here:</strong>
+<ul>
+<li><strong>From Course 1:</strong></li>
+<li>R programming (ggplot2, dplyr)</li>
+<li>Mixed-effects models (lme4)</li>
+<li>Experimental design logic</li>
+<li>PCIbex basics (if covered)</li>
+<li><strong>From Course 2:</strong></li>
+<li>Bayesian hierarchical modeling (used for production latencies)</li>
+<li>Parameter recovery (validating models)</li>
+<li>Generative thinking (what process generates errors?)</li>
+</ul>
+
+<strong>Integration in Course 3:</strong>
+<ul>
+<li><strong>Experiments:</strong> Design production tasks (Course 1 skills)</li>
+<li><strong>Models:</strong> Fit hierarchical Bayesian models to production data (Course 2 skills)</li>
+<li><strong>Theory:</strong> Connect findings to morphological theory (new in Course 3)</li>
+</ul>
+
+<strong>Can be taken standalone</strong> if you have:
+<ul>
+<li>Background in psycholinguistics (or take Course 1 first)</li>
+<li>R programming skills (or take Course 1/2 first)</li>
+<li>Willingness to learn PCIbex quickly</li>
+</ul>
+
+<hr>
+
+<h2>10. Who Should Take This Course</h2>
+
+<h3>Good fit if you:</h3>
+<ul>
+<li>Want to conduct original production research</li>
+<li>Are interested in morphological planning / agreement / speech errors</li>
+<li>Comfortable with R and willing to learn PCIbex</li>
+<li>Like hands-on, studio-style learning (not just reading papers)</li>
+<li>Planning a dissertation or QP on production topics</li>
+</ul>
+
+<h3>May struggle if you:</h3>
+<ul>
+<li>No prior psycholinguistics background (take Course 1 first)</li>
+<li>Uncomfortable with programming (Course 1 or 2 will help)</li>
+<li>Prefer lecture-style seminars to studio/lab format</li>
+<li>Find 10-week quarters overwhelming</li>
+</ul>
+
+<h3>For advanced graduate students:</h3>
+<p>This seminar is ideal if you're:</p>
+<ul>
+<li>Preparing a QP or dissertation on production</li>
+<li>Developing experimental skills for your research program</li>
+<li>Seeking publication-ready proposals for psycholinguistics journals (e.g., <em>JML</em>, <em>Cognition</em>, <em>LCP</em>)</li>
+</ul>
+
+<hr>
+
+<h2>11. Expected Background</h2>
+
+<h3>Assumed Knowledge</h3>
+<p>You should be comfortable with:</p>
+<ul>
+<li><strong>Psycholinguistics concepts:</strong> Production architecture, incremental planning, lexical access</li>
+<li><strong>R programming:</strong> Data wrangling (dplyr), visualization (ggplot2), mixed models (lme4)</li>
+<li><strong>Statistics:</strong> Mixed-effects models, understanding interactions, model comparison</li>
+</ul>
+
+<h3>Will Learn in This Course</h3>
+<ul>
+<li><strong>PCIbex:</strong> Web-based production experiments (audio recording, timing)</li>
+<li><strong>Morphological theory:</strong> How production models connect to morphosyntactic theory</li>
+<li><strong>Cross-linguistic design:</strong> Leveraging typological differences to test theories</li>
+<li><strong>Preregistration:</strong> Writing analysis plans before seeing data</li>
+</ul>
+
+<hr>
+
+<h2>12. Final Project Expectations</h2>
+
+<p>Your final project should:</p>
+
+<ol>
+<li><strong>Motivate a research question</strong> from production theory (2-3 pages)</li>
+<li><strong>Review relevant literature</strong> critically (2-3 pages)</li>
+<li><strong>Propose an experiment</strong> with:</li>
+<ul>
+<li>Explicit predictions from competing theories</li>
+<li>Materials (example items)</li>
+<li>Design (conditions, counterbalancing, exclusions)</li>
+<li>Preregistered analysis plan (models, contrasts)</li>
+<li><strong>Include pilot data (optional)</strong> or <strong>detailed power analysis</strong></li>
+<li><strong>Discuss implications</strong> for theory and future directions (1-2 pages)</li>
+</ul>
+</ol>
+
+<strong>Format:</strong> ACL/LSA/Cognition style (10 pages)
+
+<strong>Outcome:</strong> Should be submittable to a conference (HSP, LSA, CUNY) or workshop with minor revisions.
+
+<hr>
+
+<h2>13. Instructor Note</h2>
+
+<p>This seminar is the capstone of the sequence, where you apply everything you've learned to tackle an active research question. The quarter format is intense, but the studio model ensures you get individualized feedback and hands-on support.</p>
+
+<p>By Week 10, you should have a conference-ready proposal that you're excited to continue working on. Many students turn these projects into QPs, dissertation chapters, or first-author publications.</p>
+
+<p>I'm committed to helping you develop the best possible project. Use office hours, ask questions, workshop your ideas with peers. This is a collaborative research environment, not a traditional seminar.</p>
+
+<p>Looking forward to building experiments and testing theories together.</p>
+
+<p>Best, Utku Turk</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Utku Türk</h3>
+                    <p>PhD Candidate in Linguistics<br>University of Maryland, College Park</p>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p>
+                        <a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a><br>
+                        <a href="https://utkuturk.com" target="_blank">Personal Website →</a><br>
+                        <a href="https://github.com/utkuturk" target="_blank">GitHub</a> |
+                        <a href="https://scholar.google.com/citations?hl=tr&user=wa7LG9gAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Application materials for Instructional Professor position in Linguistics and Cognitive Science | University of Chicago</p>
+                <p class="copyright">Last updated: January 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

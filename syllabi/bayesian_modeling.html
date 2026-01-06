@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayesian Cognitive Modeling - Utku Türk</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Utku Türk</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../cover_letter.html">Cover Letter</a></li>
+                <li><a href="../teaching_statement.html">Teaching Statement</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Course Packages <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../package1.html">Package 1: Psycholinguistics</a>
+                        <a href="../package2.html">Package 2: AI & NLP</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Syllabi <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../syllabi/intro_psycholing.html">Intro to Psycholinguistics</a>
+                        <a href="../syllabi/bayesian_modeling.html">Bayesian Cognitive Modeling</a>
+                        <a href="../syllabi/morphology_production.html">Morphology in Production</a>
+                        <a href="../syllabi/intro_ai_language.html">Machine Learning for Language</a>
+                        <a href="../syllabi/advanced_nlp_ai.html">Advanced NLP & AI</a>
+                        <a href="../syllabi/quant_methods.html">Quantitative Methods</a>
+                        <a href="../syllabi/linguistic_illusions.html">Linguistic Illusions</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+<h1>Bayesian Cognitive Modeling for Linguistics</h1>
+<h3>From Theory to Implementation</h3>
+<strong>LING 4XXX -- Winter Quarter 2027</strong>
+
+<strong>Time:</strong> TBD (meets 4 hours/week: 2 sessions of 2 hours each)
+
+<strong>Location:</strong> TBD
+
+<strong>Instructor:</strong> Utku Turk (<a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a>)
+
+<strong>Office hours:</strong> By appointment
+
+<strong>Course site:</strong> Canvas
+
+<strong>Prerequisites:</strong> Introduction to programming (R or Python) and basic statistics.
+
+<strong>Format:</strong> Quarter system (10 weeks)
+
+<hr>
+
+<h2>1. Course Description</h2>
+
+<p>How do we test theories of cognition? How can we formalize our hypotheses about how the mind works? This course introduces computational modeling as a tool for understanding cognitive processes, with a specific focus on <strong>Bayesian Cognitive Modeling</strong>.</p>
+
+<p>Unlike data analysis, which asks "is there an effect?", cognitive modeling asks "what underlying process generated this data?". We will use the probabilistic programming language <strong>Stan</strong> to build, fit, and evaluate generative models of cognition. We will cover the full workflow: from defining a mathematical model of a cognitive process, to implementing it in code, to recovering parameters from simulated data, and finally applying it to real human behavioral data.</p>
+
+<p>This course moves quickly through foundational material to give you hands-on experience with the most essential cognitive models.</p>
+
+<hr>
+
+<h2>2. Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+
+<ol>
+<li>Explain the purpose of quantitative modeling in cognitive science and distinguish among descriptive, predictive, and explanatory models.</li>
+<li>Critically evaluate and implement simulations of cognitive models.</li>
+<li>Implement Bayesian cognitive models using <strong>Stan</strong> and interpret their structure.</li>
+<li>Evaluate the robustness of Bayesian cognitive models (parameter recovery, replication).</li>
+<li>Clearly communicate the structure and performance of a Bayesian cognitive model.</li>
+</ol>
+
+<hr>
+
+<h2>3. Course Content & Structure</h2>
+
+<p>The course is divided into four main modules:</p>
+
+<ol>
+<li><strong>Foundations:</strong> Role of computational modeling; Simulation; Generative stance; Probability & Bayes.</li>
+<li><strong>Basic Models:</strong> Parameter estimation, Signal Detection Theory, Latent variables (Stan implementation).</li>
+<li><strong>Hierarchical Structures:</strong> Pooling, shrinkage, individual differences.</li>
+<li><strong>Advanced Topics & Projects:</strong> Model comparison, mixture models, final projects.</li>
+</ol>
+
+<h3>The Generative Stance</h3>
+<p>This course teaches you to think like a <strong>theoretician</strong>. Instead of asking "what pattern is in the data?", you'll ask "if my theory is true, what data would I see?" This flips statistics on its head.</p>
+
+<strong>Weekly Mathematical Intuition Building:</strong>
+
+<p>Each week begins with a conceptual question before we touch code:</p>
+
+<ul>
+<li>Week 1: "If you flip a coin 10 times and get 7 heads, what can you infer about the coin's bias?"</li>
+<li>Week 3: "How does Signal Detection Theory formalize the difference between sensitivity and bias?"</li>
+<li>Week 5: "What does it mean for a model to 'pool' information across participants?"</li>
+<li>Week 7: "Why do we need model comparison when all models are wrong?"</li>
+</ul>
+
+<p>We'll build mathematical intuition through simulation, visualization, and analogy—not calculus proofs.</p>
+
+<h3>From Theory to Implementation</h3>
+
+<p>Each model follows the same workflow:</p>
+
+<ol>
+<li><strong>Formalize the theory</strong> (What are we claiming about cognition?)</li>
+<li><strong>Specify the generative process</strong> (How would a god generate this data?)</li>
+<li><strong>Implement in Stan</strong> (Translate the theory into code)</li>
+<li><strong>Simulate fake data</strong> (Can we recover our parameters?)</li>
+<li><strong>Apply to real data</strong> (Does the theory fit human behavior?)</li>
+<li><strong>Evaluate robustness</strong> (Where does the model break?)</li>
+</ol>
+
+<hr>
+
+<h2>4. Course Requirements</h2>
+
+<h3>4.1 Grading</h3>
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>%</th>
+<th>What counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participation</td>
+<td>10</td>
+<td>Active engagement in labs.</td>
+</tr>
+<tr>
+<td>Weekly Labs (7x)</td>
+<td>42</td>
+<td>Coding assignments in R/Stan (6% each).</td>
+</tr>
+<tr>
+<td>Midterm Project</td>
+<td>18</td>
+<td>Replicating a simple cognitive model (SDT or GCM).</td>
+</tr>
+<tr>
+<td>Final Project</td>
+<td>30</td>
+<td>Implementing and testing a novel/extended model.</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>4.2 Labs & Projects</h3>
+<ul>
+<li><strong>Labs:</strong> Weekly implementation tasks in R and Stan. Due before the next week's first session.</li>
+<li><strong>Midterm (Week 6):</strong> Replicate a standard model (e.g., SDT, GCM). Focus on implementation.</li>
+<li><strong>Final (Finals week):</strong> Choose a phenomenon, implement a Bayesian model, simulate data, and fit/evaluate it. 8-10 page report.</li>
+</ul>
+
+<hr>
+
+<h2>5. Course Schedule (10 Weeks)</h2>
+
+<em>Readings based on Vasishth et al. (Bayesian Cognitive Modeling) and Lee & Wagenmakers.</em>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Wk</th>
+<th>Topic</th>
+<th>Readings / Concepts</th>
+<th>Lab / Assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MODULE 1</strong></td>
+<td><strong>Foundations</strong></td>
+</tr>
+<tr>
+<td>1a</td>
+<td>Intro to Cognitive Modeling</td>
+<td>Generative stance; Descriptive vs Explanatory</td>
+<td>Conceptual intro</td>
+</tr>
+<tr>
+<td>1b</td>
+<td>Probability & Bayes Rule</td>
+<td>Joint/Conditional probability; Bayes Theorem</td>
+<td>Lab 1: Simulating processes + probability</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>Intro to Stan</td>
+<td>Probabilistic programming; Stan syntax</td>
+<td>Stan tutorial</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>Stan Implementation Practice</td>
+<td>Binomial rate model</td>
+<td>Lab 2: Hello World in Stan</td>
+</tr>
+<tr>
+<td><strong>MODULE 2</strong></td>
+<td><strong>Basic Models</strong></td>
+<td><strong>(Lee & Wagenmakers)</strong></td>
+</tr>
+<tr>
+<td>3a</td>
+<td>Parameter Estimation</td>
+<td>Gaussian parameters; Priors & Posteriors</td>
+<td>Lab practice</td>
+</tr>
+<tr>
+<td>3b</td>
+<td>Signal Detection Theory (SDT)</td>
+<td>Equal variance SDT; d' and c</td>
+<td>Lab 3: Implementing SDT</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>Latent Variables I</td>
+<td>GCM; Change detection</td>
+<td>Theory + simulation</td>
+</tr>
+<tr>
+<td>4b</td>
+<td>Latent Variables II</td>
+<td>Exemplar theory implementation</td>
+<td>Lab 4: GCM implementation</td>
+</tr>
+<tr>
+<td><strong>MODULE 3</strong></td>
+<td><strong>Hierarchical Structures</strong></td>
+</tr>
+<tr>
+<td>5a</td>
+<td>Hierarchical Models I</td>
+<td>Pooling; Shrinkage; Hyperparameters</td>
+<td>Lab 5: Hierarchical Binomial</td>
+</tr>
+<tr>
+<td>5b</td>
+<td>Hierarchical Models II</td>
+<td>Individual differences; Log-normal RTs</td>
+<td>Lab work continues</td>
+</tr>
+<tr>
+<td>6a</td>
+<td>Review & Midterm Prep</td>
+<td>Troubleshooting; Model comparison prep</td>
+<td>Office hours intensive</td>
+</tr>
+<tr>
+<td>6b</td>
+<td><strong>Midterm Due + Model Comparison</strong></td>
+<td>Bayes Factors; WAIC; LOO</td>
+<td><strong>Midterm due</strong>; Lab 6: Comparing models</td>
+</tr>
+<tr>
+<td><strong>MODULE 4</strong></td>
+<td><strong>Advanced Architectures & Project</strong></td>
+<td><strong>(Vasishth et al.)</strong></td>
+</tr>
+<tr>
+<td>7a</td>
+<td>Mixture Models</td>
+<td>Fast-guess; Speed-accuracy trade-off</td>
+<td>Lab 7: Mixture modeling</td>
+</tr>
+<tr>
+<td>7b</td>
+<td>Multinomial Processing Trees</td>
+<td>MPTs; Categorical responses</td>
+<td>MPT examples (optional depth)</td>
+</tr>
+<tr>
+<td>8a</td>
+<td>Robustness & Recovery</td>
+<td>Posterior predictive checks</td>
+<td>Final project workshop I</td>
+</tr>
+<tr>
+<td>8b</td>
+<td>Final Project Workshop</td>
+<td>Troubleshooting Stan code</td>
+<td>Individual consultations</td>
+</tr>
+<tr>
+<td>9a</td>
+<td>Final Project Workshop II</td>
+<td>Peer review of preliminary results</td>
+<td>Group feedback session</td>
+</tr>
+<tr>
+<td>9b</td>
+<td>Advanced Topics (Optional)</td>
+<td>Accumulator models (LBA); Future directions</td>
+<td>Self-study resources</td>
+</tr>
+<tr>
+<td>10a</td>
+<td>Final Presentations I</td>
+<td>Student presentations</td>
+<td>Peer feedback</td>
+</tr>
+<tr>
+<td>10b</td>
+<td>Final Presentations II</td>
+<td>Student presentations</td>
+<td>Peer feedback + wrap-up</td>
+</tr>
+<tr>
+<td>Finals</td>
+<td><strong>Due:</strong> Final Project Report</td>
+</tr>
+</tbody>
+</table>
+
+
+<strong>Note:</strong> Each week has two sessions (a/b). Sessions blend lecture and lab work, with increasing lab emphasis as the quarter progresses.
+
+<hr>
+
+<h2>6. Policies</h2>
+
+<h3>6.1 What you might struggle with (and how to succeed)</h3>
+
+<strong>Coding in Stan:</strong> Stan can be challenging because it is declarative (you declare the model) rather than imperative. But don't worry—we will tackle this together, starting simple and building up complexity line by line.
+
+<ul>
+<li><strong>Start simple:</strong> Build the simplest possible model that compiles.</li>
+<li><strong>Use the manual:</strong> The Stan User Guide is excellent.</li>
+<li><strong>Simulate first:</strong> Always check if you can recover parameters from simulated data.</li>
+</ul>
+
+<strong>Bayesian concepts:</strong>
+<ul>
+<li>Focus on the <strong>generative process</strong>: "How would a god generate this data?"</li>
+<li>Focus on interpreting the posterior distribution, not the integrals.</li>
+</ul>
+
+<strong>Quarter pace:</strong>
+<ul>
+<li>This course moves <strong>fast</strong>. Week 2 in quarter = Week 3-4 in semester.</li>
+<li><strong>Don't fall behind</strong> on labs—each builds on the previous one.</li>
+<li><strong>Use office hours</strong> extensively—debugging Stan code is part of learning.</li>
+</ul>
+
+<h3>6.2 Academic Integrity</h3>
+<p>You may collaborate on code, but you must write your own write-ups and understand every line of code you submit.</p>
+
+<h3>6.3 Accessibility & Wellness</h3>
+<p>If you need accommodations, please contact the relevant campus office and talk to me early in the quarter. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.</p>
+
+<h3>6.4 Use of LLMs</h3>
+<p>LLMs may be used for <strong>debugging</strong> (e.g., understanding Stan error messages) but not for generating model code. Document any use.</p>
+
+<hr>
+
+<h2>7. Resources</h2>
+
+<h3>Textbooks</h3>
+<ol>
+<li><strong>Lee, M. D., & Wagenmakers, E. J. (2014).</strong> <em>Bayesian Cognitive Modeling</em>. Cambridge University Press.</li>
+<li><strong>Vasishth et al. (2024).</strong> <em>Introduction to Bayesian Data Analysis for Cognitive Science</em>. <a href="https://bruno.nicenboim.me/bayescogsci/">Online Book</a></li>
+</ol>
+
+<h3>Online Resources</h3>
+<ol>
+<li><a href="https://mc-stan.org/users/documentation/">Stan User Guide</a></li>
+<li><a href="https://discourse.mc-stan.org/">Stan Discourse Forum</a> - for troubleshooting</li>
+<li><a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking</a> - supplementary Bayesian modeling resource</li>
+</ol>
+
+<h3>Software (All Free)</h3>
+<ul>
+<li><strong>R/RStudio:</strong> Statistical computing environment</li>
+<li><strong>cmdstanr:</strong> R interface to Stan (<a href="https://mc-stan.org/cmdstanr/">installation guide</a>)</li>
+<li><strong>brms:</strong> Alternative high-level Bayesian modeling in R (we'll mention but won't focus on)</li>
+</ul>
+
+<hr>
+
+<h2>9. Connection to Course Sequence</h2>
+
+<p>This course is <strong>Course 2</strong> in the Experimental Psycholinguistics sequence:</p>
+
+<ul>
+<li><strong>Course 1:</strong> Intro to Psycholinguistics (undergrad) - Fall Quarter</li>
+<li><strong>Course 2 (this course):</strong> Bayesian Cognitive Modeling (mixed) - Winter Quarter</li>
+<li><strong>Course 3:</strong> Morphological Planning in Production (grad) - Spring Quarter</li>
+</ul>
+
+<strong>Skills from Course 1 that help here:</strong>
+
+<ul>
+<li><strong>R programming:</strong> You already know `dplyr`, `ggplot2`, `lme4` from Course 1</li>
+<li><strong>Mixed-effects models:</strong> Now extended to full Bayesian hierarchical models</li>
+<li><strong>Experimental thinking:</strong> Now formalized as generative models</li>
+</ul>
+
+<strong>Skills developed here that transfer to Course 3:</strong>
+
+<ul>
+<li><strong>Bayesian analysis:</strong> Used for production latency models in Course 3</li>
+<li><strong>Hierarchical modeling:</strong> Applied to cross-linguistic experiments</li>
+<li><strong>Parameter recovery:</strong> Used to validate complex production models</li>
+</ul>
+
+<strong>Can be taken standalone</strong> if you have programming and statistics background.
+
+<hr>
+
+<h2>10. Who Should Take This Course</h2>
+
+<h3>Good fit if you:</h3>
+
+<ul>
+<li>Want to formalize theories of cognition computationally</li>
+<li>Need Bayesian modeling skills for research</li>
+<li>Took Course 1 (Intro Psycholing) and want deeper statistical skills</li>
+<li>Are comfortable with programming and willing to learn Stan</li>
+<li>Like thinking generatively ("what process could generate this data?")</li>
+</ul>
+
+<h3>May struggle if you:</h3>
+
+<ul>
+<li>Have no programming experience (take Course 1 first or learn R basics first)</li>
+<li>Prefer plug-and-play statistics (this course emphasizes understanding over push-button tools)</li>
+<li>Find 10-week quarters overwhelming</li>
+</ul>
+
+<h3>For graduate students:</h3>
+
+<p>Especially valuable if your research involves:</p>
+<ul>
+<li>Modeling cognitive processes</li>
+<li>Individual differences</li>
+<li>Cross-linguistic comparisons requiring hierarchical models</li>
+<li>Reaction time or accuracy data needing mixture models</li>
+</ul>
+
+<hr>
+
+<h2>11. Instructor Note</h2>
+
+<p>This quarter moves fast, but the goal is the same: teach you to think like a modeler. By Week 10, you should be able to read a psycholinguistics paper and think "I could formalize that theory in Stan and test whether it recovers the behavioral pattern."</p>
+
+<p>Stan has a learning curve, but it's worth it. Once you learn Stan, you can model anything—not just language, but vision, memory, decision-making, clinical data, and more. This skill is valuable in academia and industry.</p>
+
+<p>I'm committed to helping you succeed. Use office hours, ask questions, debug together. We'll get through it together.</p>
+
+<p>Looking forward to building models with you.</p>
+
+<p>Best, Utku Turk</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Utku Türk</h3>
+                    <p>PhD Candidate in Linguistics<br>University of Maryland, College Park</p>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p>
+                        <a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a><br>
+                        <a href="https://utkuturk.com" target="_blank">Personal Website →</a><br>
+                        <a href="https://github.com/utkuturk" target="_blank">GitHub</a> |
+                        <a href="https://scholar.google.com/citations?hl=tr&user=wa7LG9gAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Application materials for Instructional Professor position in Linguistics and Cognitive Science | University of Chicago</p>
+                <p class="copyright">Last updated: January 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

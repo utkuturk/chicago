@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Methods - Utku Türk</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Utku Türk</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../cover_letter.html">Cover Letter</a></li>
+                <li><a href="../teaching_statement.html">Teaching Statement</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Course Packages <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../package1.html">Package 1: Psycholinguistics</a>
+                        <a href="../package2.html">Package 2: AI & NLP</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Syllabi <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../syllabi/intro_psycholing.html">Intro to Psycholinguistics</a>
+                        <a href="../syllabi/bayesian_modeling.html">Bayesian Cognitive Modeling</a>
+                        <a href="../syllabi/morphology_production.html">Morphology in Production</a>
+                        <a href="../syllabi/intro_ai_language.html">Machine Learning for Language</a>
+                        <a href="../syllabi/advanced_nlp_ai.html">Advanced NLP & AI</a>
+                        <a href="../syllabi/quant_methods.html">Quantitative Methods</a>
+                        <a href="../syllabi/linguistic_illusions.html">Linguistic Illusions</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+<h1>Quantitative Methods for Linguistics</h1>
+<h3>R, Bayesian Statistics, and Reproducible Research</h3>
+<strong>LING 3XXX -- Fall 2026</strong>
+
+<strong>Time:</strong> TBD  
+<strong>Location:</strong> TBD  
+<strong>Instructor:</strong> Utku Turk (<a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a>)  
+<strong>Office hours:</strong> By appointment  
+<strong>Course site:</strong> Canvas
+
+<strong>Prerequisites:</strong> Basic statistics. No prior programming experience required.
+
+<hr>
+
+<h2>1. Course Description</h2>
+
+<p>How do we understand what statistical models actually do? How can we test whether our models are appropriate for our data? What does it mean for a model to "learn" from data?</p>
+
+<p>This course takes a <strong>simulation-first approach</strong> to quantitative methods in linguistics. I know statistics can be intimidating, but my goal is to make it approachable by peeling back the math. Rather than treating statistical models as black boxes, we will learn to build models from the ground up by simulating data. This approach makes abstract statistical concepts concrete: you will see exactly how regression works, what mixed-effects models assume, and why Bayesian inference is powerful.</p>
+
+<p>Following the approach of McElreath's <em>Statistical Rethinking</em>, we emphasize understanding models as generative processes. You will learn to: (i) simulate data from a specified model, (ii) fit models to recover the parameters you simulated, (iii) check whether your model assumptions are met, and (iv) use simulations for power analysis and model validation.</p>
+
+<strong>No prior programming or statistics experience required</strong>—we build everything from scratch through simulation.
+
+<h2>2. Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+<ol>
+<li>Program in R for data analysis and simulation.</li>
+<li>Simulate data from statistical models (regression, mixed-effects, etc.).</li>
+<li>Understand models as generative processes.</li>
+<li>Fit and interpret linear and logistic regression models.</li>
+<li>Understand and apply mixed-effects models for repeated measures data.</li>
+<li>Use simulation to check model assumptions and validate results.</li>
+<li>Conduct power analysis through data simulation.</li>
+<li>Fit Bayesian models using Stan and brms.</li>
+<li>Specify informative priors based on domain knowledge.</li>
+<li>Create reproducible research documents using Quarto.</li>
+<li>Critically evaluate statistical claims in linguistic research.</li>
+</ol>
+
+<h2>3. Course Structure</h2>
+
+<h3>Weekly Rhythm</h3>
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Component</th>
+<th>What it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lecture</strong></td>
+<td>Concepts, statistical theory, and when to use which methods (Tue/Thu first half).</td>
+</tr>
+<tr>
+<td><strong>Coding lab</strong></td>
+<td>Hands-on R work: data wrangling, visualization, model fitting (Tue/Thu second half).</td>
+</tr>
+<tr>
+<td><strong>Homework</strong></td>
+<td>Weekly problem sets with coding + interpretation questions.</td>
+</tr>
+<tr>
+<td><strong>Simulation Challenge</strong></td>
+<td>Each week features a "Simulation Challenge"—can you generate data that breaks a model's assumptions? Can you recover parameters from messy data? These challenges build intuition for what models actually do.</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>Why Simulation-First?</h3>
+<p>Traditional stats courses teach you to run tests on data. This course teaches you to <strong>think like a statistician</strong>: if I believe X about the world, what data would I expect to see? What patterns would surprise me? By simulating data first, you develop deep intuition about what models assume and when they fail.</p>
+
+<strong>Simulation Challenges</strong> (weekly coding puzzles):
+<ul>
+<li>Week 2: Simulate 100 coin flips—how often do you get 5 heads in a row?</li>
+<li>Week 4: How many participants do you need to detect a 50ms difference in reading times?</li>
+<li>Week 6: Can you trick a regression model by adding a correlated predictor?</li>
+<li>Week 8: Simulate crossed random effects—what happens when you ignore them?</li>
+</ul>
+
+<h3>Tools We Use</h3>
+<ul>
+<li><strong>R:</strong> primary programming language.</li>
+<li><strong>RStudio:</strong> integrated development environment.</li>
+<li><strong>tidyverse:</strong> data wrangling and visualization.</li>
+<li><strong>lme4 & brms:</strong> mixed-effects models.</li>
+<li><strong>Stan:</strong> Bayesian inference engine.</li>
+<li><strong>Quarto:</strong> reproducible research documents.</li>
+</ul>
+
+<h2>4. Course Requirements</h2>
+
+<h3>4.1 Grading</h3>
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>%</th>
+<th>What counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participation</td>
+<td>15</td>
+<td>Active engagement in labs; exercises.</td>
+</tr>
+<tr>
+<td>Homework (10x)</td>
+<td>50</td>
+<td>Coding + interpretation questions (5% each).</td>
+</tr>
+<tr>
+<td>Midterm project</td>
+<td>10</td>
+<td>Data analysis report (regression/mixed models).</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td>25</td>
+<td>Complete analysis with Quarto report + presentation.</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>4.2 Homework Policy</h3>
+<p>Homework is due on Canvas by 11:59pm. Late submissions lose 10% per day (up to 3 days). You may collaborate, but must write your own code and answers.</p>
+
+<h3>4.3 Projects</h3>
+<ul>
+<li><strong>Midterm (Week 9):</strong> Analyze a dataset using regression or lmer. 3-4 page report.</li>
+<li><strong>Final (Finals week):</strong> Complete data analysis project. Clear research question, data collection/curation, analysis, validation, interpretation. 8-10 page reproducible Quarto document.</li>
+</ul>
+
+<h2>5. Course Schedule</h2>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Wk</th>
+<th>Topic</th>
+<th>Readings / Resources</th>
+<th>Lab / due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Intro; Why simulation?; R basics</td>
+<td>McElreath Ch. 1-2; R4DS Ch. 1-4</td>
+<td>Installing R/RStudio</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Simple simulations; Sampling</td>
+<td>McElreath Ch. 3; R4DS Ch. 5</td>
+<td>Coin flips; <strong>Due:</strong> HW1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Simulations, p-values, NHST</td>
+<td>McElreath Ch. 3; Gelman & Hill Ch. 1-2</td>
+<td>Null distributions</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Power analysis via simulation</td>
+<td>SIMR; DeBruine & Barr (2021)</td>
+<td>Sample size planning; <strong>Due:</strong> HW2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Simple regression</td>
+<td>McElreath Ch. 4; Gelman & Hill Ch. 3</td>
+<td>Generative models</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Multiple regression; Interactions</td>
+<td>McElreath Ch. 5; Gelman & Hill Ch. 4</td>
+<td>Interactions; <strong>Due:</strong> HW3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GLMs; Logistic regression</td>
+<td>McElreath Ch. 10-11; Gelman & Hill Ch. 5</td>
+<td>Binary outcomes</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Hierarchical data structures</td>
+<td>McElreath Ch. 13; DeBruine & Barr</td>
+<td>Nested/Crossed; <strong>Due:</strong> HW4</td>
+</tr>
+<tr>
+<td>9</td>
+<td>LMER I: Random intercepts</td>
+<td>McElreath Ch. 13; Winter Ch. 9-10</td>
+<td>Random intercepts; <strong>Due:</strong> Midterm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>LMER II: Random slopes</td>
+<td>McElreath Ch. 13; Barr et al. (2013)</td>
+<td>Maximal models; <strong>Due:</strong> HW5</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Intro to Bayesian Inference</td>
+<td>McElreath Ch. 1-3</td>
+<td>Priors/Posteriors</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Bayesian regression (brms)</td>
+<td>McElreath Ch. 4, 9</td>
+<td>Fitting Bayesian models; <strong>Due:</strong> HW6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Diagnostics & PPC</td>
+<td>McElreath Ch. 9; Gelman Ch. 6</td>
+<td>Validating models</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Model comparison</td>
+<td>McElreath Ch. 7; Vehtari et al.</td>
+<td>WAIC, LOO; <strong>Due:</strong> HW7</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Reproducible research (Quarto)</td>
+<td>Quarto docs; Marwick et al. (2018)</td>
+<td>Creating Quarto docs</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Final presentations</td>
+<td>Peer feedback</td>
+</tr>
+<tr>
+<td>Final</td>
+<td><strong>Due:</strong> Final Project</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>6. Policies</h2>
+
+<h3>6.1 What you might struggle with (and how to succeed)</h3>
+<ul>
+<li><strong>Time management:</strong> Expect 8--10 hours/week. Don't cram. Start debugging early.</li>
+<li><strong>Learning to code:</strong> Everyone struggles at first. Read error messages. Google is your friend.</li>
+<li><strong>Understanding statistics:</strong> Focus on concepts. Visualize everything. Connect to linguistics.</li>
+</ul>
+
+<h3>6.2 Accessibility & Wellness</h3>
+<p>If you need accommodations, please contact the relevant campus office and talk to me early in the semester. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.</p>
+
+<h2>7. Resources</h2>
+<em>   <strong>Primary Text:</strong> McElreath (2020). </em>Statistical Rethinking*.
+<em>   <strong>R:</strong> Wickham & Grolemund (2017). </em>R for Data Science*.
+<em>   <strong>Linguistics:</strong> Winter (2020). </em>Statistics for Linguists*.
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Utku Türk</h3>
+                    <p>PhD Candidate in Linguistics<br>University of Maryland, College Park</p>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p>
+                        <a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a><br>
+                        <a href="https://utkuturk.com" target="_blank">Personal Website →</a><br>
+                        <a href="https://github.com/utkuturk" target="_blank">GitHub</a> |
+                        <a href="https://scholar.google.com/citations?hl=tr&user=wa7LG9gAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Application materials for Instructional Professor position in Linguistics and Cognitive Science | University of Chicago</p>
+                <p class="copyright">Last updated: January 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

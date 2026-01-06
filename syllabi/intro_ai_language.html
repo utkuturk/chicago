@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning for Language - Utku Türk</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Utku Türk</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../cover_letter.html">Cover Letter</a></li>
+                <li><a href="../teaching_statement.html">Teaching Statement</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Course Packages <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../package1.html">Package 1: Psycholinguistics</a>
+                        <a href="../package2.html">Package 2: AI & NLP</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Syllabi <span>▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="../syllabi/intro_psycholing.html">Intro to Psycholinguistics</a>
+                        <a href="../syllabi/bayesian_modeling.html">Bayesian Cognitive Modeling</a>
+                        <a href="../syllabi/morphology_production.html">Morphology in Production</a>
+                        <a href="../syllabi/intro_ai_language.html">Machine Learning for Language</a>
+                        <a href="../syllabi/advanced_nlp_ai.html">Advanced NLP & AI</a>
+                        <a href="../syllabi/quant_methods.html">Quantitative Methods</a>
+                        <a href="../syllabi/linguistic_illusions.html">Linguistic Illusions</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+<h1>Machine Learning for Language</h1>
+<h3>Neural Networks, Linguistic Structure, and NLP Applications</h3>
+<strong>LING 3XXX -- Fall Quarter 2026</strong>
+
+<strong>Time:</strong> TBD (meets 4 hours/week: 2 sessions of 2 hours each)
+
+<strong>Location:</strong> TBD
+
+<strong>Instructor:</strong> Utku Turk (<a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a>)
+
+<strong>Office hours:</strong> By appointment
+
+<strong>Course site:</strong> Canvas
+
+<strong>Prerequisites:</strong> None. No prior programming or math experience required.
+
+<strong>Format:</strong> Quarter system (10 weeks)
+
+<hr>
+
+<h2>1. Course Description</h2>
+
+<p>How do neural networks learn to process language? Can they acquire grammatical knowledge from text alone? What can machine learning tell us about linguistic structure?</p>
+
+<p>This course introduces neural networks and their applications to language, balancing technical foundations with linguistic questions. You will learn how to build text classifiers, train language models, and implement modern NLP systems. But you will also investigate what these models learn: Do they capture syntactic dependencies? Can they generalize across languages? How do their representations compare to human linguistic knowledge? I am excited to explore the intersection of these two fields with you as we build the technology of the future.</p>
+
+<p>By the end of the quarter, you will be able to implement neural models in Python, design experiments to probe what they've learned, and critically evaluate claims about AI and language. This is a hands-on course that combines practical ML skills with linguistic analysis.</p>
+
+<strong>No prior programming experience required</strong>—we build skills from scratch.
+
+<hr>
+
+<h2>2. Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+
+<ol>
+<li>Implement neural networks for text classification and language modeling in Python/PyTorch.</li>
+<li>Understand word embeddings and how meaning is represented in vector space.</li>
+<li>Build and train RNNs, LSTMs, and transformer models.</li>
+<li>Design probing experiments to test what models learn about linguistic structure.</li>
+<li>Analyze attention patterns and model representations.</li>
+<li>Evaluate whether models learn syntax, semantics, or surface heuristics.</li>
+<li>Apply neural models to practical NLP tasks (sentiment, translation, generation).</li>
+<li>Critically evaluate claims about AI capabilities and limitations.</li>
+</ol>
+
+<hr>
+
+<h2>3. Course Structure</h2>
+
+<h3>Weekly Rhythm</h3>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Component</th>
+<th>What it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lecture</strong></td>
+<td>Concepts, math intuition, and how things work (Session 1).</td>
+</tr>
+<tr>
+<td><strong>Coding lab</strong></td>
+<td>Hands-on Python work: implementing models, debugging (Session 2).</td>
+</tr>
+<tr>
+<td><strong>Homework</strong></td>
+<td>Four problem sets with coding + conceptual questions.</td>
+</tr>
+<tr>
+<td><strong>Model of the Week</strong></td>
+<td>Each week, we spotlight one influential model or paper. You'll interact with it hands-on—not just read about it, but run it, break it, and understand what makes it tick.</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>The Three Questions</h3>
+
+<p>Every model we study will be interrogated through three lenses:</p>
+
+<ol>
+<li><strong>What can it do?</strong> (Capabilities: tasks it solves, benchmarks it passes)</li>
+<li><strong>What can't it do?</strong> (Limitations: where it fails, what it doesn't learn)</li>
+<li><strong>What does that tell us about language?</strong> (Implications: what this reveals about linguistic structure and cognition)</li>
+</ol>
+
+<p>This isn't just a coding class or just a linguistics class—it's both. You'll build the models AND use them as scientific instruments to investigate language.</p>
+
+<h3>Your Learning Arc</h3>
+
+<ul>
+<li><strong>Weeks 1-3</strong>: Build your own neural networks from scratch (no magic libraries—you'll implement backprop by hand!)</li>
+<li><strong>Weeks 4-6</strong>: Explore what models learn about language structure (syntax, semantics, pragmatics)</li>
+<li><strong>Weeks 7-9</strong>: Work with state-of-the-art transformers and LLMs</li>
+<li><strong>Week 10</strong>: Critical evaluation—when do models succeed for the wrong reasons?</li>
+</ul>
+
+<h3>Tools We Use</h3>
+
+<ul>
+<li><strong>Python:</strong> primary programming language.</li>
+<li><strong>PyTorch:</strong> neural network framework.</li>
+<li><strong>Google Colab:</strong> cloud-based coding environment.</li>
+<li><strong>Hugging Face:</strong> pretrained models and datasets.</li>
+</ul>
+
+<hr>
+
+<h2>4. Course Requirements</h2>
+
+<h3>4.1 Grading</h3>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>%</th>
+<th>What counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participation</td>
+<td>15</td>
+<td>Active engagement in labs.</td>
+</tr>
+<tr>
+<td>Homework (4x)</td>
+<td>48</td>
+<td>Coding + concepts (12% each).</td>
+</tr>
+<tr>
+<td>Midterm presentation</td>
+<td>7</td>
+<td>Classifier proposal (Week 5).</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td>30</td>
+<td>Detailed research proposal (8-10 pages).</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>4.2 Projects</h3>
+
+<ul>
+<li><strong>Midterm (Week 5):</strong> Propose a neural classifier for a linguistic phenomenon (e.g., modal reading, genericity). 2-page proposal + 5-minute presentation.</li>
+<li><strong>Final (Finals week):</strong> Detailed research proposal investigating a linguistic question using neural networks. 8-10 page proposal in ACL format + presentation.</li>
+</ul>
+
+<hr>
+
+<h2>5. Course Schedule (10 Weeks)</h2>
+
+<table class="syllabus-table">
+<thead>
+<tr>
+<th>Wk</th>
+<th>Topic</th>
+<th>Readings (Selected)</th>
+<th>Lab / Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1a</td>
+<td>Intro; NNs and Language</td>
+<td>Newell (1973); Marr (1982)</td>
+<td>Python basics I</td>
+</tr>
+<tr>
+<td>1b</td>
+<td>Representing words</td>
+<td>Jurafsky & Martin Ch. 6</td>
+<td>Python basics II</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>Perceptrons; Gradient Descent</td>
+<td>Goodfellow et al. Ch. 6</td>
+<td>Perceptron from scratch</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>MLP; Backprop</td>
+<td>Goodfellow et al. Ch. 6; Olah</td>
+<td>PyTorch basics</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>Word Embeddings</td>
+<td>Jurafsky & Martin Ch. 6</td>
+<td>Training embeddings</td>
+</tr>
+<tr>
+<td>3b</td>
+<td>Probing Structure</td>
+<td>Ettinger (2020)</td>
+<td><strong>Due:</strong> HW1; Probing lab</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>RNNs; Language Modeling</td>
+<td>Jurafsky & Martin Ch. 9; Karpathy</td>
+<td>Character LM</td>
+</tr>
+<tr>
+<td>4b</td>
+<td>Evaluating Linguistic Knowledge</td>
+<td>Marvin & Linzen (2018); BLiMP</td>
+<td>Minimal pairs testing</td>
+</tr>
+<tr>
+<td>5a</td>
+<td>LSTMs</td>
+<td>Olah (2015); Hochreiter & Schmidhuber</td>
+<td><strong>Midterm presentations</strong></td>
+</tr>
+<tr>
+<td>5b</td>
+<td>LSTM implementation</td>
+<td>LSTM coding; <strong>Due:</strong> HW2</td>
+</tr>
+<tr>
+<td>6a</td>
+<td>Attention Mechanisms</td>
+<td>Bahdanau et al. (2015)</td>
+<td>Visualizing attention</td>
+</tr>
+<tr>
+<td>6b</td>
+<td>Attention & Syntax</td>
+<td>Vig & Belinkov (2019)</td>
+<td>Attention analysis</td>
+</tr>
+<tr>
+<td>7a</td>
+<td>Transformers I</td>
+<td>Vaswani et al. (2017); Illustrated Transformer</td>
+<td><strong>Due:</strong> HW3; Self-attention</td>
+</tr>
+<tr>
+<td>7b</td>
+<td>Transformers II (BERT/GPT)</td>
+<td>Devlin et al.; Radford et al.</td>
+<td>Fine-tuning BERT</td>
+</tr>
+<tr>
+<td>8a</td>
+<td>LLMs & Prompting</td>
+<td>GPT-3 paper; Chain-of-thought</td>
+<td>GPT prompts</td>
+</tr>
+<tr>
+<td>8b</td>
+<td>Counterfactual Evaluation</td>
+<td>Kaushik et al. (2020); Gardner et al.</td>
+<td>Minimal pair testing</td>
+</tr>
+<tr>
+<td>9a</td>
+<td>Model Evaluation (Surprisal)</td>
+<td>Futrell et al. (2019); Wilcox et al.</td>
+<td><strong>Due:</strong> HW4; Computing surprisal</td>
+</tr>
+<tr>
+<td>9b</td>
+<td>Limitations & Ethics</td>
+<td>Bender & Koller (2020); Stochastic Parrots</td>
+<td>Bias detection</td>
+</tr>
+<tr>
+<td>10a</td>
+<td>Final Presentations I</td>
+<td>Peer feedback</td>
+</tr>
+<tr>
+<td>10b</td>
+<td>Final Presentations II</td>
+<td>Peer feedback; Wrap-up</td>
+</tr>
+<tr>
+<td>Finals</td>
+<td><strong>Due:</strong> Final Report</td>
+</tr>
+</tbody>
+</table>
+
+
+<strong>Note:</strong> Each week has two sessions (a/b). Session (a) focuses on concepts; session (b) focuses on hands-on coding.
+
+<hr>
+
+<h2>6. Policies</h2>
+
+<h3>6.1 What you might struggle with (and how to succeed)</h3>
+
+<ul>
+<li><strong>Time management:</strong> Expect 10-12 hours/week outside class. Start homework early.</li>
+<li><strong>Python learning curve:</strong> Week 1-2 will be challenging if you're new to programming. Use office hours!</li>
+<li><strong>Math anxiety:</strong> We explain through intuition and visualization, not proofs. Focus on understanding, not memorization.</li>
+<li><strong>Reading papers:</strong> Read strategically. Focus on key contributions, not every detail.</li>
+<li><strong>Coding:</strong> Debug systematically. Pair program. Use Google Colab so everyone has the same environment.</li>
+</ul>
+
+<h3>6.2 Quarter System Considerations</h3>
+
+<p>This course moves <strong>fast</strong>:</p>
+
+<ul>
+<li><strong>Week 3 (quarter) = Week 5 (semester):</strong> Already implementing backprop by hand</li>
+<li><strong>Week 7 (quarter) = Week 11 (semester):</strong> Already working with transformers</li>
+<li><strong>No catching up later:</strong> Missing one week = missing 10% of content</li>
+<li><strong>Use labs effectively:</strong> Don't skip session (b)—that's where you learn to code</li>
+</ul>
+
+<h3>6.3 Academic Integrity</h3>
+<p>Do your own work. You may collaborate on homework, but must write your own code and answers. Cite sources.</p>
+
+<h3>6.4 Use of LLMs</h3>
+<p>LLMs may be used for <strong>support</strong> (debugging, learning syntax) but not to generate solutions. Document any use.</p>
+
+<strong>Pedagogical note:</strong> Part of this course is understanding how LLMs work. Using ChatGPT to solve homework defeats the purpose—you're trying to build the thing that ChatGPT is!
+
+<h3>6.5 Accessibility & Wellness</h3>
+<p>If you need accommodations, please contact the relevant campus office and talk to me early in the quarter. If you are struggling—academically or personally—please reach out. I really appreciate when students communicate with me, and I'm happy to work with you to make a plan together.</p>
+
+<hr>
+
+<h2>7. Resources</h2>
+
+<h3>Textbooks (Free Online)</h3>
+<em>   <strong>Jurafsky & Martin (3rd ed.).</strong> </em>Speech and Language Processing*. <a href="https://web.stanford.edu/~jurafsky/slp3/">https://web.stanford.edu/~jurafsky/slp3/</a>
+<em>   <strong>Goodfellow et al.</strong> </em>Deep Learning*. <a href="https://www.deeplearningbook.org/">https://www.deeplearningbook.org/</a>
+
+<h3>Online Tutorials</h3>
+<ul>
+<li><strong>PyTorch Tutorials:</strong> <a href="https://pytorch.org/tutorials/">https://pytorch.org/tutorials/</a></li>
+<li><strong>The Illustrated Transformer:</strong> <a href="https://jalammar.github.io/illustrated-transformer/">https://jalammar.github.io/illustrated-transformer/</a></li>
+<li><strong>Karpathy's Neural Networks:</strong> <a href="https://karpathy.github.io/">https://karpathy.github.io/</a></li>
+</ul>
+
+<h3>Frameworks</h3>
+<ul>
+<li><strong>PyTorch:</strong> Neural network implementation</li>
+<li><strong>Hugging Face:</strong> Pre-trained models (<a href="https://huggingface.co/">https://huggingface.co/</a>)</li>
+<li><strong>Google Colab:</strong> Free GPU access (<a href="https://colab.research.google.com/">https://colab.research.google.com/</a>)</li>
+</ul>
+
+<hr>
+
+<h2>9. Connection to Course Sequence</h2>
+
+<p>This course is <strong>Course 1</strong> in the AI/NLP sequence:</p>
+<ul>
+<li><strong>Course 1 (this course):</strong> Machine Learning for Language (mixed) - Fall Quarter</li>
+<li><strong>Course 2:</strong> Advanced NLP & AI for Linguistics (grad) - Winter Quarter</li>
+</ul>
+
+<strong>Skills developed here that transfer to Course 2:</strong>
+<ul>
+<li><strong>PyTorch:</strong> Used for implementing interpretability methods</li>
+<li><strong>Transformers:</strong> Course 2 probes transformer representations</li>
+<li><strong>Attention:</strong> Course 2 analyzes attention patterns in depth</li>
+<li><strong>Critical thinking:</strong> Course 2 evaluates interpretability claims</li>
+</ul>
+
+<strong>Can be taken standalone</strong> if you just want ML/NLP skills without the interpretability focus.
+
+<hr>
+
+<h2>10. Who Should Take This Course</h2>
+
+<h3>Good fit if you:</h3>
+
+<ul>
+<li>Curious about how neural networks process language</li>
+<li>Want to learn Python and PyTorch</li>
+<li>Like hands-on coding (not just theory)</li>
+<li>Interested in linguistics AND computation</li>
+<li>Comfortable with mathematical intuition (no proofs required)</li>
+</ul>
+
+<h3>May struggle if you:</h3>
+
+<ul>
+<li>Uncomfortable with programming (we teach from scratch, but it's fast-paced)</li>
+<li>Prefer lecture-only courses (half the time is coding labs)</li>
+<li>Find 10-week quarters overwhelming</li>
+</ul>
+
+<h3>No Prerequisites</h3>
+
+<p>Seriously—we assume zero programming background. Week 1 starts with "what is a variable?"</p>
+
+<h3>For Different Student Populations</h3>
+
+<ul>
+<li><strong>Linguistics undergrads:</strong> Learn computational skills for NLP career paths</li>
+<li><strong>CS undergrads:</strong> Gain linguistic perspective on NLP (beyond engineering)</li>
+<li><strong>Linguistics grad students:</strong> Prepare for computational linguistics research</li>
+<li><strong>CS grad students:</strong> Understand what NLP systems actually learn about language</li>
+</ul>
+
+<hr>
+
+<h2>11. What You'll Build</h2>
+
+<p>By the end of the quarter, you'll have:</p>
+
+<ol>
+<li><strong>Perceptron from scratch</strong> (Week 2) - no libraries, just NumPy</li>
+<li><strong>Multi-layer network with backprop</strong> (Week 3) - understand gradient descent</li>
+<li><strong>Word embeddings</strong> (Week 3) - train your own Word2Vec-style model</li>
+<li><strong>Character-level language model</strong> (Week 4) - generate text with RNNs</li>
+<li><strong>LSTM classifier</strong> (Week 5) - sentiment analysis</li>
+<li><strong>Attention mechanism</strong> (Week 6) - visualize what models attend to</li>
+<li><strong>Transformer</strong> (Week 7) - self-attention and multi-head attention</li>
+<li><strong>BERT fine-tuning</strong> (Week 7) - use pre-trained models</li>
+<li><strong>GPT prompting</strong> (Week 8) - in-context learning experiments</li>
+<li><strong>Probing classifier</strong> (Week 9) - test what models learn about syntax</li>
+</ol>
+
+<p>Plus: A <strong>final research proposal</strong> investigating a linguistic question with neural networks.</p>
+
+<hr>
+
+<h2>12. Instructor Note</h2>
+
+<p>Welcome! This course moves fast, but we'll move together. My goal is to demystify neural networks—show you that they're not magic, just math and code. By Week 10, you'll be able to read an NLP paper and think "I could implement that."</p>
+
+<p>The linguistics perspective is what makes this course special. We don't just ask "does it work?"—we ask "what does it learn?" and "what does that tell us about language?" This is the future of linguistics: using computational models as scientific instruments.</p>
+
+<p>I'm excited to build models and test theories with you. Let's discover what neural networks can teach us about language.</p>
+
+<p>Best, Utku Turk</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Utku Türk</h3>
+                    <p>PhD Candidate in Linguistics<br>University of Maryland, College Park</p>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p>
+                        <a href="mailto:utkuturk@umd.edu">utkuturk@umd.edu</a><br>
+                        <a href="https://utkuturk.com" target="_blank">Personal Website →</a><br>
+                        <a href="https://github.com/utkuturk" target="_blank">GitHub</a> |
+                        <a href="https://scholar.google.com/citations?hl=tr&user=wa7LG9gAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Application materials for Instructional Professor position in Linguistics and Cognitive Science | University of Chicago</p>
+                <p class="copyright">Last updated: January 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
